@@ -1,0 +1,8 @@
+﻿ALTER TABLE dbo.EyeTest ADD OpticianID int NULL
+ALTER TABLE dbo.ProgramEyeTest ADD Priority int NULL
+UPDATE dbo.ProgramEyeTest SET Priority = (SELECT Priority From EyeTest WHERE ID = dbo.ProgramEyeTest.EyeTestID)
+ALTER TABLE dbo.ProgramEyeTest ALTER COLUMN [Priority] int NOT NULL 
+UPDATE EyeTest SET Priority = Priority * 10
+ALTER TABLE dbo.ProgramEyeTest ADD Active bit NULL
+UPDATE dbo.ProgramEyeTest SET Active = 1
+ALTER TABLE dbo.ProgramEyeTest ALTER COLUMN [Active] bit NOT NULL 

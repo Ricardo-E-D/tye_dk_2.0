@@ -1,0 +1,12 @@
+﻿h1 {
+	 font-size: 1.5em; border-bottom: 1px #333333 dotted; width:100%;
+	 margin-top: 0.3em;
+}
+.span12 {
+    width: 660px;
+}
+
+div.username { position:absolute; top: 5px; }
+div.logout { position:absolute; top: 5px; right: 20px; }
+div.fieldTitle { font-weight: bold; margin-top: 0.4em; }
+div.column { width: 30%; }

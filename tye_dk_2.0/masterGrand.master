@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterGrand.master.cs" Inherits="masterGrand" %>
+
+<!DOCTYPE html>
+	<html dir="ltr" lang="da-DK">
+		<head id="Head1" runat="server">
+			<meta charset="utf-8">
+			<meta http-equiv="Expires" content="Fri, Jun 12 1981 08:20:00 GMT" />
+			<meta http-equiv="Pragma" content="no-cache" />
+			<meta http-equiv="Cache-Control" content="no-cache\" />
+			<title>TrainYourEyes</title>
+			<link rel="Stylesheet" href="/css/buttons.css" />
+			<script type="text/javascript" src="/js/jquery1.8.3.min.js"></script>
+			<script type="text/javascript" src="/js/jquery.center.js"></script>
+			<script type="text/javascript" src="/js/tye.js"></script>
+			<script type="text/javascript" src="/js/includer.js"></script>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-46362772-2', 'tye.dk');
+			  ga('send', 'pageview');
+
+			</script>
+			<asp:ContentPlaceHolder id="CPHmasterHead" runat="server">
+			</asp:ContentPlaceHolder>
+			<link rel="Stylesheet" href="/css/master.css" />
+		</head>
+	<body>
+		<form id="masterForm" runat="server">
+		<asp:ScriptManager runat="server" ID="ScriptManager1" />
+		
+		<div class="masterContainerWrapper">
+			<div class="masterTop">
+				<div class="row contentContainer">
+					<div class="span12" style="width:100%; text-align: center;">
+						<img src="//tye.dk/assets/img/tye_logo.png" alt="TrainYourEyes" />
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="masterContainer row">
+				<div class="masterContent">
+					<div class="masterContentMenu">
+						<asp:ContentPlaceHolder id="CPHmasterMenu" runat="server" />
+					</div>
+					<div class="clear"></div>
+					<div class="masterContentBody">
+						<asp:ContentPlaceHolder id="CPHmasterContent" runat="server" />
+					</div>
+				</div>
+				<div class="clear" style="height:30px;"></div>
+			</div>
+			<div class="masterFooter">
+				<div class="row contentContainer">
+					<a href="//tye.dk"><%--Train Your Eyes--%></a>
+				</div>
+			</div>
+		</div>
+		 <asp:Literal runat="server" ID="litJsStartTag" Text="<script type='text/javascript'>" EnableViewState="false" />
+			
+			 <asp:ContentPlaceHolder id="CPHmasterScript" runat="server">
+			 </asp:ContentPlaceHolder>
+			 
+			 $(function () {
+				include('/js/jquery-ui1.9.1.min.js');
+				//include('/js/imagesloaded.min.js');
+				include('/js/jquery.qtip.min.js');
+				includer();	
+	 		});
+			
+		 <asp:Literal runat="server" ID="Literal1" Text="</script>" EnableViewState="false" />
+    
+	 </form>
+	</body>
+</html>

@@ -1,0 +1,589 @@
+﻿This report shows the steps taken to convert your Web application from ASP.NET 1.1 to ASP.NET 2.0. 
+There may be some unresolved conversion issues you will need to manually fix. 
+For more information, please refer to http://go.microsoft.com/fwlink/?LinkId=46995 or search for the help topic "Converting from Visual Studio .NET 2002 or 2003".
+Conversion Started on project file tye.csproj at May 02 2007, 14:00:59.
+
+=========================ERRORS===================
+ERROR: Unable to find codebehind file AdminFile.aspx.cs.    popups\hest.aspx
+
+=========================WARNINGS=================
+ERROR: Unable to parse file test.aspx.
+ERROR: Unable to parse file popups\hest.aspx.
+Warning: This web project was converted as a file-based web application. If your site contained any IIS meta-information, e.g. sub-folders marked as virtual directories, it is recommended that you close this web site and re-open it using the Open Web Site command and selecting the Local IIS tab.
+
+=========================COMMENTS=================
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Web.Config has been changed to read-write.
+Web.Config: Added 'xhtmlConformance' attribute.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Default.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file Default.aspx.
+Removed attribute Codebehind from file Default.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file Default.aspx.cs (Line 30).
+'Reference' tag with reference to '~/uc/pages/news.ascx' added to file Default.aspx.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Default.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Error.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file Error.aspx.
+Removed attribute Codebehind from file Error.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file Error.aspx.cs (Line 22).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Error.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Global.asax has been changed to read-write.
+Removed attribute Codebehind from file Global.asax.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\NoJavaScript.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file NoJavaScript.aspx.
+Removed attribute Codebehind from file NoJavaScript.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file NoJavaScript.aspx.cs (Line 19).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\NoJavaScript.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\test.aspx has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\21_test_popup.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\21_test_popup.aspx.
+Removed attribute Codebehind from file popups\21_test_popup.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\21_test_popup.aspx.cs (Line 21).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\21_test_popup.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\activatekeys.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\activatekeys.aspx.
+Removed attribute Codebehind from file popups\activatekeys.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\ActivateKeys.aspx.cs (Line 21).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\ActivateKeys.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\admin.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\admin.aspx.
+Removed attribute Codebehind from file popups\admin.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\Admin.aspx.cs (Line 32).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\Admin.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\anamnese.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\anamnese.aspx.
+Removed attribute Codebehind from file popups\anamnese.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\Anamnese.aspx.cs (Line 20).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\Anamnese.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\controlcard.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\controlcard.aspx.
+Removed attribute Codebehind from file popups\controlcard.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\Controlcard.aspx.cs (Line 20).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\Controlcard.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\hest.aspx has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\insert.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\insert.aspx.
+Removed attribute Codebehind from file popups\insert.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\Insert.aspx.cs (Line 29).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\Insert.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\internal_link.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\internal_link.aspx.
+Removed attribute Codebehind from file popups\internal_link.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\Internal_link.aspx.cs (Line 23).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\Internal_link.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\list.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\list.aspx.
+Removed attribute Codebehind from file popups\list.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\List.aspx.cs (Line 26).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\List.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\preview.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\preview.aspx.
+Removed attribute Codebehind from file popups\preview.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\Preview.aspx.cs (Line 20).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\Preview.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\print.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\print.aspx.
+Removed attribute Codebehind from file popups\print.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\Print.aspx.cs (Line 32).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\Print.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\testcard.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\testcard.aspx.
+Removed attribute Codebehind from file popups\testcard.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\Testcard.aspx.cs (Line 22).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\Testcard.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\uploadfile.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file popups\uploadfile.aspx.
+Removed attribute Codebehind from file popups\uploadfile.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file popups\UploadFile.aspx.cs (Line 30).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\UploadFile.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3dlevel0.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\3dlevel0.aspx.
+Removed attribute Codebehind from file screentasks\3dlevel0.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\3DLevel0.aspx.cs (Line 23).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3DLevel0.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3dlevel1.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\3dlevel1.aspx.
+Removed attribute Codebehind from file screentasks\3dlevel1.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\3DLevel1.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3DLevel1.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3dlevel2.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\3dlevel2.aspx.
+Removed attribute Codebehind from file screentasks\3dlevel2.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\3DLevel2.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3DLevel2.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3dlevel3.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\3dlevel3.aspx.
+Removed attribute Codebehind from file screentasks\3dlevel3.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\3DLevel3.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3DLevel3.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3dlevel4.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\3dlevel4.aspx.
+Removed attribute Codebehind from file screentasks\3dlevel4.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\3DLevel4.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3DLevel4.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3dlevel5.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\3dlevel5.aspx.
+Removed attribute Codebehind from file screentasks\3dlevel5.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\3DLevel5.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3dlevel6.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\3dlevel6.aspx.
+Removed attribute Codebehind from file screentasks\3dlevel6.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\3DLevel6.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3DLevel6.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3dlevel7.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\3dlevel7.aspx.
+Removed attribute Codebehind from file screentasks\3dlevel7.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\3DLevel7.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\3DLevel7.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\circel.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\circel.aspx.
+Removed attribute Codebehind from file screentasks\circel.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\circel.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\circel.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\extralevela.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\extralevela.aspx.
+Removed attribute Codebehind from file screentasks\extralevela.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\ExtralevelA.aspx.cs (Line 26).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\ExtralevelA.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\extralevelb.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\extralevelb.aspx.
+Removed attribute Codebehind from file screentasks\extralevelb.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\ExtralevelB.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\ExtralevelB.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\extralevelc.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\extralevelc.aspx.
+Removed attribute Codebehind from file screentasks\extralevelc.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\ExtralevelC.aspx.cs (Line 29).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\ExtralevelC.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\extraleveld.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\extraleveld.aspx.
+Removed attribute Codebehind from file screentasks\extraleveld.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\ExtralevelD.aspx.cs (Line 27).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\ExtralevelD.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\extralevele.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\extralevele.aspx.
+Removed attribute Codebehind from file screentasks\extralevele.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\ExtralevelE.aspx.cs (Line 22).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\ExtralevelE.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\extralevelf.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\extralevelf.aspx.
+Removed attribute Codebehind from file screentasks\extralevelf.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\ExtralevelF.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\ExtralevelF.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\extralevelh.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\extralevelh.aspx.
+Removed attribute Codebehind from file screentasks\extralevelh.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\ExtralevelH.aspx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\ExtralevelH.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\level1a.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\level1a.aspx.
+Removed attribute Codebehind from file screentasks\level1a.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\Level1A.aspx.cs (Line 23).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\Level1A.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\test.aspx has been changed to read-write.
+Removed attribute AutoEventWireup from file screentasks\test.aspx.
+Removed attribute Codebehind from file screentasks\test.aspx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file screentasks\Test.aspx.cs (Line 19).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\screentasks\Test.aspx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_banner_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\admin_banner_admin.ascx.
+Removed attribute Codebehind from file uc\pages\admin_banner_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\admin_banner_admin.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\admin_banner_admin.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\admin_banner_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\admin_banner_admin.ascx.cs (Line 30).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_banner_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_encyclopedia.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\admin_encyclopedia.ascx.
+Removed attribute Codebehind from file uc\pages\admin_encyclopedia.ascx.
+Removed attribute AutoEventWireup from file uc\pages\admin_encyclopedia.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\admin_encyclopedia.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\admin_encyclopedia.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\admin_encyclopedia.ascx.cs (Line 29).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_encyclopedia.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_faq_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\admin_faq_admin.ascx.
+Removed attribute Codebehind from file uc\pages\admin_faq_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\admin_faq_admin.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\admin_faq_admin.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\admin_faq_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\admin_faq_admin.ascx.cs (Line 26).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_faq_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_key_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\admin_key_admin.ascx.
+Removed attribute Codebehind from file uc\pages\admin_key_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\admin_key_admin.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\admin_key_admin.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\admin_key_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\admin_key_admin.ascx.cs (Line 34).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_key_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_log.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\admin_log.ascx.
+Removed attribute Codebehind from file uc\pages\admin_log.ascx.
+Removed attribute AutoEventWireup from file uc\pages\admin_log.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\admin_log.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\admin_log.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\admin_log.ascx.cs (Line 18).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_log.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_news_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\admin_news_admin.ascx.
+Removed attribute Codebehind from file uc\pages\admin_news_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\admin_news_admin.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\admin_news_admin.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\admin_news_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\admin_news_admin.ascx.cs (Line 20).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_news_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_opt_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\admin_opt_admin.ascx.
+Removed attribute Codebehind from file uc\pages\admin_opt_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\admin_opt_admin.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\admin_opt_admin.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\admin_opt_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\admin_opt_admin.ascx.cs (Line 33).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_opt_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_support_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\admin_support_admin.ascx.
+Removed attribute Codebehind from file uc\pages\admin_support_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\admin_support_admin.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\admin_support_admin.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\admin_support_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\admin_support_admin.ascx.cs (Line 25).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\admin_support_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\articles.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\articles.ascx.
+Removed attribute Codebehind from file uc\pages\articles.ascx.
+Removed attribute AutoEventWireup from file uc\pages\articles.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\articles.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\articles.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\articles.ascx.cs (Line 15).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\articles.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\children.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\children.ascx.
+Removed attribute Codebehind from file uc\pages\children.ascx.
+Removed attribute AutoEventWireup from file uc\pages\children.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\children.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\children.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\children.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\children.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\children_1.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\children_1.ascx.
+Removed attribute Codebehind from file uc\pages\children_1.ascx.
+Removed attribute AutoEventWireup from file uc\pages\children_1.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\children_1.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\children_1.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\children_1.ascx.cs (Line 19).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\children_1.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\contact.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\contact.ascx.
+Removed attribute Codebehind from file uc\pages\contact.ascx.
+Removed attribute AutoEventWireup from file uc\pages\contact.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\contact.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\contact.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\contact.ascx.cs (Line 36).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\contact.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\encyclopedia.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\encyclopedia.ascx.
+Removed attribute Codebehind from file uc\pages\encyclopedia.ascx.
+Removed attribute AutoEventWireup from file uc\pages\encyclopedia.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\encyclopedia.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\encyclopedia.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\encyclopedia.ascx.cs (Line 18).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\encyclopedia.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\facts.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\facts.ascx.
+Removed attribute Codebehind from file uc\pages\facts.ascx.
+Removed attribute AutoEventWireup from file uc\pages\facts.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\facts.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\facts.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\facts.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\facts.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\faq.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\faq.ascx.
+Removed attribute Codebehind from file uc\pages\faq.ascx.
+Removed attribute AutoEventWireup from file uc\pages\faq.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\faq.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\faq.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\faq.ascx.cs (Line 15).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\faq.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\frontpage.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\frontpage.ascx.
+Removed attribute Codebehind from file uc\pages\frontpage.ascx.
+Removed attribute AutoEventWireup from file uc\pages\frontpage.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\frontpage.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\frontpage.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\frontpage.ascx.cs (Line 17).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\frontpage.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\misc_graphics.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\misc_graphics.ascx.
+Removed attribute Codebehind from file uc\pages\misc_graphics.ascx.
+Removed attribute AutoEventWireup from file uc\pages\misc_graphics.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\misc_graphics.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\misc_graphics.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\misc_graphics.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\misc_graphics.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\news.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\news.ascx.
+Removed attribute Codebehind from file uc\pages\news.ascx.
+Removed attribute AutoEventWireup from file uc\pages\news.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\news.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\news.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\news.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\news.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_cart.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\opt_cart.ascx.
+Removed attribute Codebehind from file uc\pages\opt_cart.ascx.
+Removed attribute AutoEventWireup from file uc\pages\opt_cart.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\opt_cart.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\opt_cart.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\opt_cart.ascx.cs (Line 21).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_cart.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_client_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\opt_client_admin.ascx.
+Removed attribute Codebehind from file uc\pages\opt_client_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\opt_client_admin.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\opt_client_admin.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\opt_client_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\opt_client_admin.ascx.cs (Line 56).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_client_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_client_records.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\opt_client_records.ascx.
+Removed attribute Codebehind from file uc\pages\opt_client_records.ascx.
+Removed attribute AutoEventWireup from file uc\pages\opt_client_records.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\opt_client_records.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\opt_client_records.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\opt_client_records.ascx.cs (Line 37).
+'Reference' tag with reference to '~/uc/pages/schedule.ascx' added to file uc\pages\opt_client_records.ascx.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_client_records.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_courses.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\opt_courses.ascx.
+Removed attribute Codebehind from file uc\pages\opt_courses.ascx.
+Removed attribute AutoEventWireup from file uc\pages\opt_courses.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\opt_courses.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\opt_courses.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\opt_courses.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_courses.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_schedule_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\opt_schedule_admin.ascx.
+Removed attribute Codebehind from file uc\pages\opt_schedule_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\opt_schedule_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\opt_schedule_admin.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_schedule_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_shop.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\opt_shop.ascx.
+Removed attribute Codebehind from file uc\pages\opt_shop.ascx.
+Removed attribute AutoEventWireup from file uc\pages\opt_shop.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\opt_shop.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\opt_shop.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\opt_shop.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_shop.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_tests.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\opt_tests.ascx.
+Removed attribute Codebehind from file uc\pages\opt_tests.ascx.
+Removed attribute AutoEventWireup from file uc\pages\opt_tests.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\opt_tests.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\opt_tests.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\opt_tests.ascx.cs (Line 24).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opt_tests.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opticians.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\opticians.ascx.
+Removed attribute Codebehind from file uc\pages\opticians.ascx.
+Removed attribute AutoEventWireup from file uc\pages\opticians.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\opticians.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\opticians.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\opticians.ascx.cs (Line 23).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\opticians.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\page_admin.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\page_admin.ascx.
+Removed attribute Codebehind from file uc\pages\page_admin.ascx.
+Removed attribute AutoEventWireup from file uc\pages\page_admin.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\page_admin.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\page_admin.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\page_admin.ascx.cs (Line 26).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\page_admin.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\press.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\press.ascx.
+Removed attribute Codebehind from file uc\pages\press.ascx.
+Removed attribute AutoEventWireup from file uc\pages\press.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\press.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\press.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\press.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\press.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\press_material.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\press_material.ascx.
+Removed attribute Codebehind from file uc\pages\press_material.ascx.
+Removed attribute AutoEventWireup from file uc\pages\press_material.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\press_material.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\press_material.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\press_material.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\press_material.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\references.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\references.ascx.
+Removed attribute Codebehind from file uc\pages\references.ascx.
+Removed attribute AutoEventWireup from file uc\pages\references.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\references.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\references.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\references.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\references.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\schedule.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\schedule.ascx.
+Removed attribute Codebehind from file uc\pages\schedule.ascx.
+Removed attribute AutoEventWireup from file uc\pages\schedule.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\schedule.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\schedule.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\schedule.ascx.cs (Line 26).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\schedule.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\service.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\service.ascx.
+Removed attribute Codebehind from file uc\pages\service.ascx.
+Removed attribute AutoEventWireup from file uc\pages\service.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\service.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\service.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\service.ascx.cs (Line 17).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\service.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\sport_graphics.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\sport_graphics.ascx.
+Removed attribute Codebehind from file uc\pages\sport_graphics.ascx.
+Removed attribute AutoEventWireup from file uc\pages\sport_graphics.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\sport_graphics.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\sport_graphics.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\sport_graphics.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\sport_graphics.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\sportvision.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\sportvision.ascx.
+Removed attribute Codebehind from file uc\pages\sportvision.ascx.
+Removed attribute AutoEventWireup from file uc\pages\sportvision.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\sportvision.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\sportvision.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\sportvision.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\sportvision.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\support.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\support.ascx.
+Removed attribute Codebehind from file uc\pages\support.ascx.
+Removed attribute AutoEventWireup from file uc\pages\support.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\support.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\support.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\support.ascx.cs (Line 37).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\support.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\test_your_eyes.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\test_your_eyes.ascx.
+Removed attribute Codebehind from file uc\pages\test_your_eyes.ascx.
+Removed attribute AutoEventWireup from file uc\pages\test_your_eyes.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\test_your_eyes.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\test_your_eyes.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\test_your_eyes.ascx.cs (Line 21).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\test_your_eyes.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\tv.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\tv.ascx.
+Removed attribute Codebehind from file uc\pages\tv.ascx.
+Removed attribute AutoEventWireup from file uc\pages\tv.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\tv.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\tv.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\tv.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\tv.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\tye_test.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\tye_test.ascx.
+Removed attribute Codebehind from file uc\pages\tye_test.ascx.
+Removed attribute AutoEventWireup from file uc\pages\tye_test.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\tye_test.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\tye_test.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\tye_test.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\tye_test.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\uc_pages.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\uc_pages.ascx.
+Removed attribute Codebehind from file uc\pages\uc_pages.ascx.
+Removed attribute AutoEventWireup from file uc\pages\uc_pages.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\uc_pages.ascx.cs (Line 93).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\uc_pages.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\what_is_tye.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\what_is_tye.ascx.
+Removed attribute Codebehind from file uc\pages\what_is_tye.ascx.
+Removed attribute AutoEventWireup from file uc\pages\what_is_tye.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\what_is_tye.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\what_is_tye.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\what_is_tye.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\what_is_tye.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\who_is_tye.ascx has been changed to read-write.
+Removed attribute TargetSchema from file uc\pages\who_is_tye.ascx.
+Removed attribute Codebehind from file uc\pages\who_is_tye.ascx.
+Removed attribute AutoEventWireup from file uc\pages\who_is_tye.ascx.
+Updated the attribute 'CodeFileBaseClass' with value 'tye.uc.pages.uc_pages' in the file 'uc\pages\who_is_tye.ascx'.
+'Reference' tag with reference to '~/uc/pages/uc_pages.ascx' added to file uc\pages\who_is_tye.ascx.
+Warning: Access level of 'Page_Load' changed to 'protected' in file uc\pages\who_is_tye.ascx.cs (Line 16).
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\uc\pages\who_is_tye.ascx.cs has been changed to read-write.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\file_info\loginfo.cs has been changed to read-write.
+Added folder App_Code\File_info.
+Moved file file_info\loginfo.cs to the App_Code\File_info\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\exceptions\nodatafound.cs has been changed to read-write.
+Added folder App_Code\exceptions.
+Moved file exceptions\nodatafound.cs to the App_Code\exceptions\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\LogEndTime.cs has been changed to read-write.
+Moved file LogEndTime.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\LogAnalysis.cs has been changed to read-write.
+Moved file LogAnalysis.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\popups\hest.aspx.cs has been changed to read-write.
+Added folder App_Code\popups.
+Moved file popups\hest.aspx.cs to the App_Code\popups\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\exceptions\licenceexpired.cs has been changed to read-write.
+Moved file exceptions\licenceexpired.cs to the App_Code\exceptions\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\exceptions\filenotfound.cs has been changed to read-write.
+Moved file exceptions\filenotfound.cs to the App_Code\exceptions\ directory.
+Moved file Tests.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Schedule.cs has been changed to read-write.
+Moved file Schedule.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Questionaire.cs has been changed to read-write.
+Moved file Questionaire.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Menu.cs has been changed to read-write.
+Moved file Menu.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\LogPageEdit.cs has been changed to read-write.
+Moved file LogPageEdit.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Log.cs has been changed to read-write.
+Moved file Log.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Global.asax.cs has been changed to read-write.
+Moved file Global.asax.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Files.cs has been changed to read-write.
+Moved file Files.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\exceptions\uploaderror.cs has been changed to read-write.
+Moved file exceptions\uploaderror.cs to the App_Code\exceptions\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Wysiwyg.cs has been changed to read-write.
+Moved file Wysiwyg.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Util.cs has been changed to read-write.
+Moved file Util.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\User.cs has been changed to read-write.
+Moved file User.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Print.cs has been changed to read-write.
+Moved file Print.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\LogLogin.cs has been changed to read-write.
+Moved file LogLogin.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\LogKeys.cs has been changed to read-write.
+Moved file LogKeys.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\exceptions\wrongpassword.cs has been changed to read-write.
+Moved file exceptions\wrongpassword.cs to the App_Code\exceptions\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\exceptions\nojs.cs has been changed to read-write.
+Moved file exceptions\nojs.cs to the App_Code\exceptions\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\exceptions\noaccess.cs has been changed to read-write.
+Moved file exceptions\noaccess.cs to the App_Code\exceptions\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\ViewLog.cs has been changed to read-write.
+Moved file ViewLog.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\test.aspx.cs has been changed to read-write.
+Moved file test.aspx.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Optician.cs has been changed to read-write.
+Moved file Optician.cs to the App_Code\ directory.
+Moved file Attributes.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\AssemblyInfo.cs has been changed to read-write.
+Moved file AssemblyInfo.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Login.cs has been changed to read-write.
+Moved file Login.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Errors.cs has been changed to read-write.
+Moved file Errors.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Database.cs has been changed to read-write.
+Moved file Database.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Client.cs has been changed to read-write.
+Moved file Client.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Cart.cs has been changed to read-write.
+Moved file Cart.cs to the App_Code\ directory.
+Read-only attribute of file C:\Documents and Settings\DAdm\My Documents\Visual Studio 2005\WebSites\tye.dk\Admin.cs has been changed to read-write.
+Moved file Admin.cs to the App_Code\ directory.
+Changed HTML validation schema for all projects to 'Internet Explorer 6.0'.
+Removed file Bin\tye.dll.
+Removed file Bin\tye.pdb.
+Removed file tye.csproj.
+Removed file tye.csproj.webinfo.
+Project tye.csproj has been converted successfully at May 02 2007, 14:01:46.

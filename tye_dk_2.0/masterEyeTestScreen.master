@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterEyeTestScreen.master.cs" Inherits="masterEyeTestScreen" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>screen test</title>
+	 <script type="text/javascript" src="/js/jquery1.8.3.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.center.js"></script>
+	<script type="text/javascript" src="/js/tye.js"></script>
+	<script type="text/javascript" src="/js/includer.js"></script>
+	 <asp:ContentPlaceHolder ID="CPHhead" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+       <asp:ContentPlaceHolder ID="CPHcontent" runat="server" />
+    </form>
+	 <div id="stDebug"></div>
+	 <asp:Literal runat="server" ID="litJsStartTag" Text="<script type='text/javascript'>" EnableViewState="false" />
+			
+		<asp:ContentPlaceHolder id="CPHscript" runat="server" />
+			 
+		$(function () {
+			include('/dynJs.aspx?q=dic', function() { 
+				tye.dictionaryLanguage = 'l<%= CurrentLanguage.ID %>'; 
+			});
+			include('/js/jquery-ui1.9.1.min.js');
+			include('/js/jquery.qtip.min.js');
+			includer();	
+		});
+		function std(v) {
+			var h = $('#stDebug').html();
+			$('#stDebug').html(v + "<br />" + h);
+		}
+	<asp:Literal runat="server" ID="Literal1" Text="</script>" EnableViewState="false" />
+    
+</body>
+</html>

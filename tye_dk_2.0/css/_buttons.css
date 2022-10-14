@@ -1,0 +1,63 @@
+﻿
+/* <buttons> */
+.btn {
+	display: inline-block;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 1px solid #6299c5;
+	text-decoration: none;
+	color: #006699;
+	background-color: #F4F8FB;
+	text-decoration:none;
+	cursor:pointer;
+	/*line-height: 1.1em;*/
+	margin-right: 15px; 
+}
+.btn:hover {
+	text-decoration:none;
+}
+/* </buttons> */
+
+/* <new buttons> */
+
+/* http://gradients.glrzad.com/ */
+/* http://graemeboy.com/css-buttons/ */
+.positive, .positivesmall, .negative, .negativesmall, .neutral, .neutralsmall {
+	white-space: nowrap;
+	background: url('/img/buttonbgs.jpg') 0 -72px repeat-x;
+	padding:4px 12px;
+	color:#ffffff;
+	font-size:15px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border:1px solid #b4c9bc;
+	color: #000000;
+	behavior: url('/js/pie/PIE.htc');
+}
+.positivesmall, .negativesmall, .neutralsmall {
+	padding: 0 2px !important;
+	font-size: 12px !important;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.positive:hover, .positivesmall:hover {
+	color: #333333;
+	border-color: #6d967c;
+}
+.negative, .negativesmall {
+	background: url('/img/buttonbgs.jpg') 0 -37px repeat-x; border:1px solid #de796d;
+}
+.negative:hover, .negativesmall:hover { /* just flip the gradient*/
+	color: #333333;
+	border-color: #725c56;
+	background: url('/img/buttonbgs.jpg') 0 -72 repeat-x !important; border:1px solid #76241b; 
+}
+.neutral, .neutralsmall  {
+	background: url('/img/buttonbgs.jpg') 0 -0 repeat-x; border:1px solid #87c5cb; 
+}
+.neutral:hover, .neutralsmall:hover {
+	color: #333333;
+	border-color: #316a71;
+	}
+/* </new buttons> */

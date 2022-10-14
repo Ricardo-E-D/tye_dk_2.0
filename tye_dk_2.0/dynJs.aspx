@@ -1,0 +1,1 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.master" AutoEventWireup="true" CodeFile="dynJs.aspx.cs" Inherits="dynJs" %>

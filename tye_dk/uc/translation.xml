@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- string name prefixes are:
+	d: description
+	m: messages
+	
+	<string name="" textDk="" textGb="" textDe="" />
+-->
+<data>
+  <section name="general">
+	<string name="details" textDk="Detaljer" textGb="Details" textDe="Details" textNo="Detaljer" />
+	<string name="opticianid" textDk="Optikerid" textGb="Doctor id" textDe="Optiker id" textNo="Optiker id" />
+	<string name="readmore" textDk="Læs mere" textGb="Read more" textDe="Lesen Sie mehr" textNo="Les mer" />
+	<string name="address" textDk="Adresse" textGb="Address" textDe="Adresse" textNo="Adresse" />
+	<string name="postalAndCity" textDk="Postnr. &amp; By" textGb="Postal code and city" textDe="PLZ und Ort" textNo="Postnummer og sted" />
+	<string name="postal" textDk="Postnr" textGb="Postal code" textDe="PLZ" textNo="Postnummer" />
+	<string name="city" textDk="By" textGb="City" textDe="Ort" textNo="By" />
+	<string name="phone" textDk="Telefon" textGb="Phone" textDe="Telefon" textNo="Telefonen" />
+	<string name="password" textDk="Kodeord" textGb="Password" textDe="Passwort" textNo="Passord" />
+	
+	<string name="created" textDk="Oprettet" textGb="Created" textDe="Erstellt" textNo="Opprettet" />
+	<string name="numberOfLogins" textDk="Antal logins" textGb="Number of logins" textDe="Anzahl der Logins" textNo="Antall innlogginger" />
+	<string name="latestLogin" textDk="Seneste login" textGb="Most recent login" textDe="Die letzten Login" textNo="Siste login" />
+	
+	<string name="date" textDk="Dato" textGb="Date" textDe="Datum" textNo="Dato" />
+	<string name="print" textDk="Udskriv" textGb="Print" textDe="Drucken" textNo="Skriv ut" />
+	<string name="delete" textDk="Slet" textGb="Delete" textDe="Löschen" textNo="Slett" />
+	<string name="edit" textDk="Ret" textGb="Edit" textDe="Bearbeiten" textNo="Edit" />
+	
+	<string name="printed" textDk="Udskrevet" textGb="Printed" textDe="Gedruckt" textNo="Trykt" />
+	<string name="resetClient" textDk="Nulstil klienten" textGb="Reset the client" textDe="Reset der Kunde" textNo="Tilbakestille klient" />
+	<string name="confirm_sureDeleteClient" textDk="Er du sikker på at du vil nulstille denne klient? Bemærk at alle data går tabt" textGb="Are you sure you want to reset the client? All data will be lost!" textDe="Bestätigen Kunde reset. Alle Daten wird verloren! Sind Sie sicher?" textNo="Er du sikker på at du vil tilbakestille klienten? Alle data vil gå tapt!" />
+	<string name="confirm_sureDeleteOptician" textDk="Er du sikker på at du vil slette denne optiker? Bemærk at alle data går tabt" textGb="Are you sure you want to reset this doctor? All data will be lost!" textDe="Bestätigen Optiker löschen. Alle Daten wird verloren! Sind Sie sicher?" textNo="Er du sikker på at du vil tilbakestille denne optiker? Alle data vil gå tapt!" />
+	
+	<string name="TyeGeneratedProgram" textDk="TYE genereret træningsprogram" textGb="TYE-generated program" textDe="TYE-erzeugt programm" textNo="TYE-genererte programmet" />
+	<string name="comment" textDk="Kommentar" textGb="Comment" textDe="Kommentar" textNo="Kommentar" />
+	
+	<string name="timeSpent" textDk="Tidsforbrug" textGb="Time spent" textDe="Zeit verbraucht" textNo="Tidsbruk" />
+	<string name="numberOfKeys" textDk="Antal nøgler" textGb="Number of codes" textDe="Anzahl der Codes" textNo="Antall koder" />
+	<string name="back" textDk="Tilbage" textGb="Back" textDe="Zurück" textNo="Tilbake" />
+	<string name="create" textDk="Opret" textGb="Create" textDe="Erstellen" textNo="Oprett" />
+	<string name="codes" textDk="Koder" textGb="Codes" textDe="Codes" textNo="Koder" />
+	<string name="keys" textDk="Nøgler" textGb="Codes" textDe="Codes" textNo="Koder" />
+	<string name="update" textDk="Opdater" textGb="Update" textDe="Aktualisieren" textNo="Oppdatere" />
+	<string name="language" textDk="Sprog" textGb="Language" textDe="Sprache" textNo="Språk" />
+	<string name="chain" textDk="Kæde" textGb="Chain" textDe="Kette" textNo="Kjede" />
+	
+	<string name="printCodeCard" textDk="Udskriv kodekort" textGb="Print code card" textDe="Code-Karte Drücken" textNo="Skriv ut kodekortet" />
+	<string name="activate" textDk="Aktiver" textGb="Activate" textDe="Aktivieren" textNo="Aktiver" />
+	<string name="optician" textDk="Optiker" textGb="Doctor" textDe="Optiker" textNo="Optiker" />
+	<string name="createdKeysForChosenOptician" textDk="Se oprettede nøgler for den valgte optiker" textGb="View created codes for chosen doctor" textDe="Anzeigen die Codes für die gewählte Optiker" textNo="Se opprettet koder for valgt optiker" />
+	<string name="approveAndProceedToStepTwo" textDk="Godkend og gå videre til trin 2" textGb="Approve and proceed to step 2" textDe="Genehmigen und gehen Sie zu Schritt 2" textNo="Godkjenn og fortsett til trinn 2" />
+	
+	 <string name="requiredField" textDk="Dette felt skal udfyldes" textGb="Required field" textDe="Dieses Feld muss ausgefüllt werden" textNo="Dette feltet må fylles ut" />
+	<string name="createNewChain" textDk="Opret ny kæde" textGb="Create new chain" textDe="Neue Kette Erstellen" textNo="Opprett ny kjede" />
+	<string name="error_validEmail" textDk="Indtast gyldig email" textGb="Enter valid email" textDe="Bitte gültiges E-Mail indgeben" textNo="Angi gyldig email" />
+	<string name="saveOptician" textDk="Gem optikkeren" textGb="Save doctor" textDe="Optiker Lagern" textNo="Lagre optiker" />
+	
+	
+    <string name="yes" textDk="Ja" textGb="Yes" textDe="Ja" textNo="Ja" />
+    <string name="no" textDk="Nej" textGb="No" textDe="Nein" textNo="" />
+    <string name="true" textDk="Sand" textGb="True" textDe="True" textNo="" />
+    <string name="false" textDk="Falsk" textGb="False" textDe="False" textNo="" />
+    <string name="text" textDk="Tekst" textGb="Text" textDe="Tekst" textNo="" />
+    <string name="type" textDk="Type" textGb="Type" textDe="Type" textNo="" />
+    <string name="mandatory" textDk="Obligatorisk" textGb="Mandatory" textDe="Vorgeschrieben" textNo="" />
+    <string name="values" textDk="Værdier" textGb="Values" textDe="Values" textNo="" />
+    <string name="description" textDk="Beskrivelse" textGb="Description" textDe="Beschreibung" textNo="" />
+    <string name="name" textDk="Navn" textGb="Name" textDe="Name" textNo="" />
+    <string name="updateQuestion" textDk="" textGb="" textDe="Update question" textNo="" />
+    <string name="cancelUpdate" textDk="Afbryd opdatering" textGb="Cancel update" textDe="Cancel update" textNo="" />
+    
+    
+    <string name="choose" textDk="Vælg" textGb="Choose" textDe="Wählen" textNo="Velg" />
+    <string name="save" textDk="Gem" textGb="Save" textDe="Save" textNo="" />
+    <string name="original" textDk="Oprindelig" textGb="Original" textDe="Original" textNo="" />
+    <string name="from" textDk="Fra" textGb="From" textDe="From" textNo="" />
+    <string name="to" textDk="Til" textGb="To" textDe="To" textNo="" />
+   
+    <string name="idnumber" textDk="ID-nummer" textGb="ID number" textDe="ID number" textNo="" />
+	
+  </section>
+  <section name="tye.uc.pages.admin_log">
+    <string name="relatedClients" textDk="Tilknyttede klienter" textGb="Related clients" textDe="Ähnliche Kunden" textNo="Relaterte klienter" />
+	<string name="noClientsFound" textDk="Der er ikke fundet nogle klienter tilknyttet denne optiker" textGb="No clients were found associated with this doctor" textDe="Es gibt keinen Kunden im Zusammenhang mit diesem Optiker" textNo="Ingen kunder ble funnet tilknyttet denne optiker" />
+	
+	<string name="relatedKeys" textDk="Tilknyttede nøgler" textGb="Related codes" textDe="Verwandte codes" textNo="Relatert koder" />
+	<string name="numberOfKeys" textDk="Antal nøgler" textGb="Number of codes" textDe="Anzahl der Codes" textNo="Antall koder" />
+	<string name="noKeysFound" textDk="Der er ikke fundet nogle nøgler til denne optiker" textGb="No codes found related to this doctor" textDe="Keine Codes gefunden im Zusammenhang mit diesem Optiker" textNo="Ingen koder funnet relatert til dette optiker" />
+	
+    <controls>
+      <control name="none" textDk="none" textGb="none" textDe="none" textNo="none" />
+    </controls>
+  </section>
+  
+
+  <section name="tye.uc.pages.admin_key_admin">
+	<string name="none" textDk="none" textGb="none" textDe="none" textNo="none" />
+	
+	<string name="chosenOptician" textDk="Valg optiker" textGb="Chosen doctor" textDe="Ausgewählt Optiker" textNo="Valgt optiker" />
+	<string name="error_numberBetweenOneAndHundred" textDk="Der skal indtastes et tal mellem 1 og 100" textGb="You must enter a number between 1 and 100" textDe="Sie müssen eine Zahl zwischen 1 und 100 eingeben" textNo="Du må angi et tall mellom 1 og 100" />
+	
+    <controls>
+      <control name="none" textDk="none" textGb="none" textDe="none" textNo="none" />
+    </controls>
+  </section>
+  
+  
+  
+  
+  <section name="tye.uc.pages.admin_opt_admin">
+	<string name="none" textDk="none" textGb="none" textDe="none" textNo="none" />
+	
+	<string name="noOpticiansFound" textDk="Der blev ikke fundet nogle optikere i databasen." textGb="No doctors found in database" textDe="Keinen Optiker in der Datenbank gefunden" textNo="Ingen optikere funnet i databasen" />
+	
+	<string name="4chrnumer" textDk="Der skal angives et 4-cifret tal" textGb="Must specify a 4-digit number" textDe="Eine 4-stellige Zahl sind obligatorisch" textNo="Må spesifisere en 4-sifret nummer" />
+	
+	<string name="6chrpassword" textDk="Der skal angives et 6-cifret kodeord" textGb="Must specify a 6-character password" textDe="Eine 6-stellige Passwort sind obligatorisch" textNo="Må spesifisere en 6-tegnet passord" />
+
+	<string name="passwordAlreadyInUse" textDk="Dette password er i brug" textGb="Password already in use" textDe="Passwort bereits in Nutzung" textNo="Passord allerede i bruk" />
+	
+	<string name="opticianIdAlreadyExists" textDk="Optikerid'et eksisterer allerede" textGb="Doctor id already exists" textDe="Optiker ID existiert bereits" textNo="Optiker id eksisterer allerede" />
+	
+	<string name="opticianUpdated" textDk="Optikeren er nu opdateret" textGb="Doctor is now updated" textDe="Optiker ist jetzt aktualisiert" textNo="Optiker er nå oppdatert" />
+	
+    <controls>
+      <control name="none" textDk="none" textGb="none" textDe="none" textNo="none" />
+    </controls>
+  </section>
+  
+  
+  
+  
+</data>

@@ -1,0 +1,1554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="db.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="dbStoreContainer">
+          <EntitySet Name="ActivationCode" EntityType="db.Store.ActivationCode" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Anamnese" EntityType="db.Store.Anamnese" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ClientEyeTestLog" EntityType="db.Store.ClientEyeTestLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Country" EntityType="db.Store.Country" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DictionaryEntry" EntityType="db.Store.DictionaryEntry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Equipment" EntityType="db.Store.Equipment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EquipmentInfo" EntityType="db.Store.EquipmentInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EquipmentItem" EntityType="db.Store.EquipmentItem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EquipmentItemInfo" EntityType="db.Store.EquipmentItemInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EyeTest" EntityType="db.Store.EyeTest" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EyeTestInfo" EntityType="db.Store.EyeTestInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EyeTestLink" EntityType="db.Store.EyeTestLink" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Language" EntityType="db.Store.Language" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Measuring21" EntityType="db.Store.Measuring21" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MeasuringControl" EntityType="db.Store.MeasuringControl" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OpticianClient" EntityType="db.Store.OpticianClient" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Program" EntityType="db.Store.Program" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProgramEyeTest" EntityType="db.Store.ProgramEyeTest" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User" EntityType="db.Store.User" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserType" EntityType="db.Store.UserType" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_ActivationCode_User" Association="db.Store.FK_ActivationCode_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="ActivationCode" EntitySet="ActivationCode" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anamnese_User" Association="db.Store.FK_Anamnese_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Anamnese" EntitySet="Anamnese" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClientEyeTestLog_ProgramEyeTest" Association="db.Store.FK_ClientEyeTestLog_ProgramEyeTest">
+            <End Role="ProgramEyeTest" EntitySet="ProgramEyeTest" />
+            <End Role="ClientEyeTestLog" EntitySet="ClientEyeTestLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EquipmentInfo_Equipment" Association="db.Store.FK_EquipmentInfo_Equipment">
+            <End Role="Equipment" EntitySet="Equipment" />
+            <End Role="EquipmentInfo" EntitySet="EquipmentInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EquipmentInfo_Language" Association="db.Store.FK_EquipmentInfo_Language">
+            <End Role="Language" EntitySet="Language" />
+            <End Role="EquipmentInfo" EntitySet="EquipmentInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EquipmentItem_Equipment" Association="db.Store.FK_EquipmentItem_Equipment">
+            <End Role="Equipment" EntitySet="Equipment" />
+            <End Role="EquipmentItem" EntitySet="EquipmentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EquipmentItemInfo_EquipmentItem" Association="db.Store.FK_EquipmentItemInfo_EquipmentItem">
+            <End Role="EquipmentItem" EntitySet="EquipmentItem" />
+            <End Role="EquipmentItemInfo" EntitySet="EquipmentItemInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EquipmentItemInfo_Language" Association="db.Store.FK_EquipmentItemInfo_Language">
+            <End Role="Language" EntitySet="Language" />
+            <End Role="EquipmentItemInfo" EntitySet="EquipmentItemInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EyeTestInfo_EyeTest" Association="db.Store.FK_EyeTestInfo_EyeTest">
+            <End Role="EyeTest" EntitySet="EyeTest" />
+            <End Role="EyeTestInfo" EntitySet="EyeTestInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EyeTestInfo_Language" Association="db.Store.FK_EyeTestInfo_Language">
+            <End Role="Language" EntitySet="Language" />
+            <End Role="EyeTestInfo" EntitySet="EyeTestInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Measuring21_User" Association="db.Store.FK_Measuring21_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Measuring21" EntitySet="Measuring21" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MeasuringControl_User" Association="db.Store.FK_MeasuringControl_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="MeasuringControl" EntitySet="MeasuringControl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OpticianClient_User" Association="db.Store.FK_OpticianClient_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="OpticianClient" EntitySet="OpticianClient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Program_User" Association="db.Store.FK_Program_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Program" EntitySet="Program" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProgramEyeTest_EyeTest" Association="db.Store.FK_ProgramEyeTest_EyeTest">
+            <End Role="EyeTest" EntitySet="EyeTest" />
+            <End Role="ProgramEyeTest" EntitySet="ProgramEyeTest" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProgramEyeTest_Program" Association="db.Store.FK_ProgramEyeTest_Program">
+            <End Role="Program" EntitySet="Program" />
+            <End Role="ProgramEyeTest" EntitySet="ProgramEyeTest" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Country" Association="db.Store.FK_User_Country">
+            <End Role="Country" EntitySet="Country" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Language" Association="db.Store.FK_User_Language">
+            <End Role="Language" EntitySet="Language" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_UserType" Association="db.Store.FK_User_UserType">
+            <End Role="UserType" EntitySet="UserType" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ActivationCode">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="OpticianUserID" Type="int" />
+          <Property Name="ClientUserID" Type="int" />
+          <Property Name="ActivationDate" Type="datetime" />
+          <Property Name="ExpirationDate" Type="datetime" />
+          <Property Name="Printed" Type="bit" Nullable="false" />
+          <Property Name="AvailableToDistributorUserID" Type="int" />
+        </EntityType>
+        <EntityType Name="Anamnese">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Data" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ClientUserID" Type="int" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ClientEyeTestLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProgramEyeTestID" Type="int" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="Score" Type="int" />
+          <Property Name="HighScore" Type="bit" />
+          <Property Name="AttribName" Type="nvarchar" MaxLength="50" />
+          <Property Name="AttribValue" Type="nvarchar" MaxLength="50" />
+          <Property Name="Comment" Type="nvarchar" MaxLength="1000" />
+          <Property Name="UpdateToken" Type="nvarchar" Nullable="false" MaxLength="14" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DictionaryEntry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Key" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Values" Type="ntext" Nullable="false" />
+          <Property Name="SystemEntry" Type="bit" Nullable="false" />
+          <Property Name="ClientSide" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Equipment">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="Picture" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EquipmentInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EquipmentID" Type="int" Nullable="false" />
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EquipmentItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EquipmentID" Type="int" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EquipmentItemInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EquipmentItemID" Type="int" Nullable="false" />
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EyeTest">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="OldBbName" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ScreenTest" Type="bit" Nullable="false" />
+          <Property Name="ScoreRequired" Type="int" />
+          <Property Name="Priority" Type="int" Nullable="false" />
+          <Property Name="InternalName" Type="nvarchar" MaxLength="100" />
+          <Property Name="HighscoreApplicable" Type="bit" Nullable="false" />
+          <Property Name="OpticianID" Type="int" />
+        </EntityType>
+        <EntityType Name="EyeTestInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EyeTestID" Type="int" Nullable="false" />
+          <Property Name="Priority" Type="int" Nullable="false" />
+          <Property Name="InfoType" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="InfoText" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="LanguageID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EyeTestLink">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EyeTestID" Type="int" Nullable="false" />
+          <Property Name="OpticianID" Type="int" Nullable="false" />
+          <Property Name="LinkUrl" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="LinkName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Language">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Measuring21">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Data" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ClientUserID" Type="int" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MeasuringControl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Data" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ClientUserID" Type="int" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="IsStart" Type="bit" />
+        </EntityType>
+        <EntityType Name="OpticianClient">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OpticianUserID" Type="int" Nullable="false" />
+          <Property Name="ClientUserID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Program">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ClientUserID" Type="int" Nullable="false" />
+          <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProgramEyeTest">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProgramID" Type="int" Nullable="false" />
+          <Property Name="EyeTestID" Type="int" Nullable="false" />
+          <Property Name="Locked" Type="bit" Nullable="false" />
+          <Property Name="LockedByOptician" Type="bit" Nullable="false" />
+          <Property Name="Priority" Type="int" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="FullName" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="MiddleName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="JobTitle" Type="nvarchar" MaxLength="200" />
+          <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="PostalCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="State" Type="nvarchar" MaxLength="50" />
+          <Property Name="CountryID" Type="int" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="200" />
+          <Property Name="MobilePhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Enabled" Type="bit" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="350" />
+          <Property Name="UserTypeID" Type="int" />
+          <Property Name="MustChangePassword" Type="bit" />
+          <Property Name="OldDatabaseID" Type="int" />
+          <Property Name="Birthday" Type="datetime" />
+          <Property Name="LanguageID" Type="int" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="PudData" Type="nvarchar(max)" />
+          <Property Name="Lat" Type="nvarchar" MaxLength="50" />
+          <Property Name="Long" Type="nvarchar" MaxLength="50" />
+          <Property Name="OldPassword" Type="nvarchar" MaxLength="50" />
+          <Property Name="ShowOnMap" Type="bit" />
+			 <Property Name="TermsAccepted" Type="bit" />
+        </EntityType>
+        <EntityType Name="UserType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_ActivationCode_User">
+          <End Role="User" Type="db.Store.User" Multiplicity="0..1" />
+          <End Role="ActivationCode" Type="db.Store.ActivationCode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ActivationCode">
+              <PropertyRef Name="OpticianUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anamnese_User">
+          <End Role="User" Type="db.Store.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Anamnese" Type="db.Store.Anamnese" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Anamnese">
+              <PropertyRef Name="ClientUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClientEyeTestLog_ProgramEyeTest">
+          <End Role="ProgramEyeTest" Type="db.Store.ProgramEyeTest" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ClientEyeTestLog" Type="db.Store.ClientEyeTestLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProgramEyeTest">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ClientEyeTestLog">
+              <PropertyRef Name="ProgramEyeTestID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EquipmentInfo_Equipment">
+          <End Role="Equipment" Type="db.Store.Equipment" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EquipmentInfo" Type="db.Store.EquipmentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipment">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentInfo">
+              <PropertyRef Name="EquipmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EquipmentInfo_Language">
+          <End Role="Language" Type="db.Store.Language" Multiplicity="1" />
+          <End Role="EquipmentInfo" Type="db.Store.EquipmentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentInfo">
+              <PropertyRef Name="LanguageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EquipmentItem_Equipment">
+          <End Role="Equipment" Type="db.Store.Equipment" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EquipmentItem" Type="db.Store.EquipmentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipment">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentItem">
+              <PropertyRef Name="EquipmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EquipmentItemInfo_EquipmentItem">
+          <End Role="EquipmentItem" Type="db.Store.EquipmentItem" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EquipmentItemInfo" Type="db.Store.EquipmentItemInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EquipmentItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentItemInfo">
+              <PropertyRef Name="EquipmentItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EquipmentItemInfo_Language">
+          <End Role="Language" Type="db.Store.Language" Multiplicity="1" />
+          <End Role="EquipmentItemInfo" Type="db.Store.EquipmentItemInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentItemInfo">
+              <PropertyRef Name="LanguageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EyeTestInfo_EyeTest">
+          <End Role="EyeTest" Type="db.Store.EyeTest" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="EyeTestInfo" Type="db.Store.EyeTestInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EyeTest">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EyeTestInfo">
+              <PropertyRef Name="EyeTestID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EyeTestInfo_Language">
+          <End Role="Language" Type="db.Store.Language" Multiplicity="1" />
+          <End Role="EyeTestInfo" Type="db.Store.EyeTestInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EyeTestInfo">
+              <PropertyRef Name="LanguageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Measuring21_User">
+          <End Role="User" Type="db.Store.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Measuring21" Type="db.Store.Measuring21" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Measuring21">
+              <PropertyRef Name="ClientUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MeasuringControl_User">
+          <End Role="User" Type="db.Store.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="MeasuringControl" Type="db.Store.MeasuringControl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="MeasuringControl">
+              <PropertyRef Name="ClientUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OpticianClient_User">
+          <End Role="User" Type="db.Store.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="OpticianClient" Type="db.Store.OpticianClient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OpticianClient">
+              <PropertyRef Name="OpticianUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Program_User">
+          <End Role="User" Type="db.Store.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Program" Type="db.Store.Program" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Program">
+              <PropertyRef Name="ClientUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProgramEyeTest_EyeTest">
+          <End Role="EyeTest" Type="db.Store.EyeTest" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ProgramEyeTest" Type="db.Store.ProgramEyeTest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EyeTest">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProgramEyeTest">
+              <PropertyRef Name="EyeTestID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProgramEyeTest_Program">
+          <End Role="Program" Type="db.Store.Program" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ProgramEyeTest" Type="db.Store.ProgramEyeTest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Program">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProgramEyeTest">
+              <PropertyRef Name="ProgramID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Country">
+          <End Role="Country" Type="db.Store.Country" Multiplicity="1" />
+          <End Role="User" Type="db.Store.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="CountryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Language">
+          <End Role="Language" Type="db.Store.Language" Multiplicity="0..1" />
+          <End Role="User" Type="db.Store.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="LanguageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_UserType">
+          <End Role="UserType" Type="db.Store.UserType" Multiplicity="0..1" />
+          <End Role="User" Type="db.Store.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="UserTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DictionaryEntries" EntityType="db.DictionaryEntry" />
+          <EntitySet Name="Languages" EntityType="db.Language" />
+          <EntitySet Name="Countries" EntityType="db.Country" />
+          <EntitySet Name="OpticianClients" EntityType="db.OpticianClient" />
+          <EntitySet Name="UserTypes" EntityType="db.UserType" />
+          <EntitySet Name="ActivationCodes" EntityType="db.ActivationCode" />
+          <EntitySet Name="EyeTests" EntityType="db.EyeTest" />
+          <EntitySet Name="EyeTestInfos" EntityType="db.EyeTestInfo" />
+          <AssociationSet Name="FK_EyeTestInfo_EyeTest" Association="db.FK_EyeTestInfo_EyeTest">
+            <End Role="EyeTest" EntitySet="EyeTests" />
+            <End Role="EyeTestInfo" EntitySet="EyeTestInfos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EyeTestInfo_Language" Association="db.FK_EyeTestInfo_Language">
+            <End Role="Language" EntitySet="Languages" />
+            <End Role="EyeTestInfo" EntitySet="EyeTestInfos" />
+          </AssociationSet>
+          <EntitySet Name="Programs" EntityType="db.Program" />
+          <EntitySet Name="ProgramEyeTests" EntityType="db.ProgramEyeTest" />
+          <AssociationSet Name="FK_ProgramEyeTest_EyeTest" Association="db.FK_ProgramEyeTest_EyeTest">
+            <End Role="EyeTest" EntitySet="EyeTests" />
+            <End Role="ProgramEyeTest" EntitySet="ProgramEyeTests" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProgramEyeTest_Program" Association="db.FK_ProgramEyeTest_Program">
+            <End Role="Program" EntitySet="Programs" />
+            <End Role="ProgramEyeTest" EntitySet="ProgramEyeTests" />
+          </AssociationSet>
+          <EntitySet Name="MeasuringControls" EntityType="db.MeasuringControl" />
+          <EntitySet Name="Measuring21" EntityType="db.Measuring21" />
+          <EntitySet Name="ClientEyeTestLogs" EntityType="db.ClientEyeTestLog" />
+          <AssociationSet Name="FK_ClientEyeTestLog_ProgramEyeTest" Association="db.FK_ClientEyeTestLog_ProgramEyeTest">
+            <End Role="ProgramEyeTest" EntitySet="ProgramEyeTests" />
+            <End Role="ClientEyeTestLog" EntitySet="ClientEyeTestLogs" />
+          </AssociationSet>
+          <EntitySet Name="Anamnese" EntityType="db.Anamnese" />
+          <EntitySet Name="Equipments" EntityType="db.Equipment" />
+          <EntitySet Name="EquipmentItems" EntityType="db.EquipmentItem" />
+          <EntitySet Name="EquipmentItemInfoes" EntityType="db.EquipmentItemInfo" />
+          <AssociationSet Name="FK_EquipmentItem_Equipment" Association="db.FK_EquipmentItem_Equipment">
+            <End Role="Equipment" EntitySet="Equipments" />
+            <End Role="EquipmentItem" EntitySet="EquipmentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EquipmentItemInfo_EquipmentItem" Association="db.FK_EquipmentItemInfo_EquipmentItem">
+            <End Role="EquipmentItem" EntitySet="EquipmentItems" />
+            <End Role="EquipmentItemInfo" EntitySet="EquipmentItemInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EquipmentItemInfo_Language" Association="db.FK_EquipmentItemInfo_Language">
+            <End Role="Language" EntitySet="Languages" />
+            <End Role="EquipmentItemInfo" EntitySet="EquipmentItemInfoes" />
+          </AssociationSet>
+          <EntitySet Name="EquipmentInfoes" EntityType="db.EquipmentInfo" />
+          <AssociationSet Name="FK_EquipmentInfo_Equipment" Association="db.FK_EquipmentInfo_Equipment">
+            <End Role="Equipment" EntitySet="Equipments" />
+            <End Role="EquipmentInfo" EntitySet="EquipmentInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EquipmentInfo_Language" Association="db.FK_EquipmentInfo_Language">
+            <End Role="Language" EntitySet="Languages" />
+            <End Role="EquipmentInfo" EntitySet="EquipmentInfoes" />
+          </AssociationSet>
+          <EntitySet Name="Users" EntityType="db.User" />
+          <AssociationSet Name="FK_ActivationCode_User" Association="db.FK_ActivationCode_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="ActivationCode" EntitySet="ActivationCodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Anamnese_User" Association="db.FK_Anamnese_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Anamnese" EntitySet="Anamnese" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Country" Association="db.FK_User_Country">
+            <End Role="Country" EntitySet="Countries" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Language" Association="db.FK_User_Language">
+            <End Role="Language" EntitySet="Languages" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Measuring21_User" Association="db.FK_Measuring21_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Measuring21" EntitySet="Measuring21" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MeasuringControl_User" Association="db.FK_MeasuringControl_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="MeasuringControl" EntitySet="MeasuringControls" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OpticianClient_User" Association="db.FK_OpticianClient_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="OpticianClient" EntitySet="OpticianClients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Program_User" Association="db.FK_Program_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Program" EntitySet="Programs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_UserType" Association="db.FK_User_UserType">
+            <End Role="UserType" EntitySet="UserTypes" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <EntitySet Name="EyeTestLinks" EntityType="db.EyeTestLink" />
+          </EntityContainer>
+        <EntityType Name="DictionaryEntry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Key" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Values" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SystemEntry" Type="Boolean" Nullable="false" />
+          <Property Type="Boolean" Name="ClientSide" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Language">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="EyeTestInfoes" Relationship="db.FK_EyeTestInfo_Language" FromRole="Language" ToRole="EyeTestInfo" />
+          <NavigationProperty Name="EquipmentItemInfoes" Relationship="db.FK_EquipmentItemInfo_Language" FromRole="Language" ToRole="EquipmentItemInfo" />
+          <NavigationProperty Name="EquipmentInfoes" Relationship="db.FK_EquipmentInfo_Language" FromRole="Language" ToRole="EquipmentInfo" />
+          <NavigationProperty Name="Users" Relationship="db.FK_User_Language" FromRole="Language" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Users" Relationship="db.FK_User_Country" FromRole="Country" ToRole="User" />
+        </EntityType>
+        <EntityType Name="OpticianClient">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="OpticianUserID" Nullable="false" />
+          <Property Type="Int32" Name="ClientUserID" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="db.FK_OpticianClient_User" FromRole="OpticianClient" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Users" Relationship="db.FK_User_UserType" FromRole="UserType" ToRole="User" />
+        </EntityType>
+        <EntityType Name="ActivationCode">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Code" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="OpticianUserID" />
+          <Property Type="Int32" Name="ClientUserID" />
+          <Property Type="DateTime" Name="ActivationDate" Precision="3" />
+          <Property Type="DateTime" Name="ExpirationDate" Precision="3" />
+          <Property Type="Boolean" Name="Printed" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="db.FK_ActivationCode_User" FromRole="ActivationCode" ToRole="User" />
+          <Property Type="Int32" Name="AvailableToDistributorUserID" />
+        </EntityType>
+        <EntityType Name="EyeTest">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OldBbName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="ScreenTest" Nullable="false" />
+          <Property Type="Int32" Name="ScoreRequired" />
+          <Property Type="Int32" Name="Priority" Nullable="false" />
+          <NavigationProperty Name="EyeTestInfos" Relationship="db.FK_EyeTestInfo_EyeTest" FromRole="EyeTest" ToRole="EyeTestInfo" />
+          <NavigationProperty Name="ProgramEyeTests" Relationship="db.FK_ProgramEyeTest_EyeTest" FromRole="EyeTest" ToRole="ProgramEyeTest" />
+          <Property Type="String" Name="InternalName" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="HighscoreApplicable" Nullable="false" />
+          <Property Type="Int32" Name="OpticianID" />
+        </EntityType>
+        <EntityType Name="EyeTestInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="EyeTestID" Nullable="false" />
+          <Property Type="Int32" Name="Priority" Nullable="false" />
+          <Property Type="String" Name="InfoType" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="InfoText" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="LanguageID" Nullable="false" />
+          <NavigationProperty Name="EyeTest" Relationship="db.FK_EyeTestInfo_EyeTest" FromRole="EyeTestInfo" ToRole="EyeTest" />
+          <NavigationProperty Name="Language" Relationship="db.FK_EyeTestInfo_Language" FromRole="EyeTestInfo" ToRole="Language" />
+        </EntityType>
+        <Association Name="FK_EyeTestInfo_EyeTest">
+          <End Type="db.EyeTest" Role="EyeTest" Multiplicity="1" />
+          <End Type="db.EyeTestInfo" Role="EyeTestInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EyeTest">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EyeTestInfo">
+              <PropertyRef Name="EyeTestID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EyeTestInfo_Language">
+          <End Type="db.Language" Role="Language" Multiplicity="1" />
+          <End Type="db.EyeTestInfo" Role="EyeTestInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EyeTestInfo">
+              <PropertyRef Name="LanguageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Program">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ClientUserID" Nullable="false" />
+          <Property Type="String" Name="Comment" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ProgramEyeTests" Relationship="db.FK_ProgramEyeTest_Program" FromRole="Program" ToRole="ProgramEyeTest" />
+          <NavigationProperty Name="User" Relationship="db.FK_Program_User" FromRole="Program" ToRole="User" />
+        </EntityType>
+        <EntityType Name="ProgramEyeTest">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ProgramID" Nullable="false" />
+          <Property Type="Int32" Name="EyeTestID" Nullable="false" />
+          <Property Type="Boolean" Name="Locked" Nullable="false" />
+          <NavigationProperty Name="EyeTest" Relationship="db.FK_ProgramEyeTest_EyeTest" FromRole="ProgramEyeTest" ToRole="EyeTest" />
+          <NavigationProperty Name="Program" Relationship="db.FK_ProgramEyeTest_Program" FromRole="ProgramEyeTest" ToRole="Program" />
+          <NavigationProperty Name="ClientEyeTestLogs" Relationship="db.FK_ClientEyeTestLog_ProgramEyeTest" FromRole="ProgramEyeTest" ToRole="ClientEyeTestLog" />
+          <Property Type="Boolean" Name="LockedByOptician" Nullable="false" />
+          <Property Type="Int32" Name="Priority" Nullable="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ProgramEyeTest_EyeTest">
+          <End Type="db.EyeTest" Role="EyeTest" Multiplicity="1" />
+          <End Type="db.ProgramEyeTest" Role="ProgramEyeTest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EyeTest">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProgramEyeTest">
+              <PropertyRef Name="EyeTestID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ProgramEyeTest_Program">
+          <End Type="db.Program" Role="Program" Multiplicity="1" />
+          <End Type="db.ProgramEyeTest" Role="ProgramEyeTest" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Program">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProgramEyeTest">
+              <PropertyRef Name="ProgramID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="MeasuringControl">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Data" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ClientUserID" Nullable="false" />
+          <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+          <NavigationProperty Name="User" Relationship="db.FK_MeasuringControl_User" FromRole="MeasuringControl" ToRole="User" />
+          <Property Type="Boolean" Name="IsStart" />
+        </EntityType>
+        <EntityType Name="Measuring21">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Data" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ClientUserID" Nullable="false" />
+          <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+          <NavigationProperty Name="User" Relationship="db.FK_Measuring21_User" FromRole="Measuring21" ToRole="User" />
+        </EntityType>
+        <EntityType Name="ClientEyeTestLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ProgramEyeTestID" Nullable="false" />
+          <Property Type="DateTime" Name="StartTime" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="EndTime" Precision="3" />
+          <Property Type="Int32" Name="Score" />
+          <Property Type="Boolean" Name="HighScore" />
+          <Property Type="String" Name="AttribName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AttribValue" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Comment" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ProgramEyeTest" Relationship="db.FK_ClientEyeTestLog_ProgramEyeTest" FromRole="ClientEyeTestLog" ToRole="ProgramEyeTest" />
+          <Property Type="String" Name="UpdateToken" Nullable="false" MaxLength="14" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_ClientEyeTestLog_ProgramEyeTest">
+          <End Type="db.ProgramEyeTest" Role="ProgramEyeTest" Multiplicity="1" />
+          <End Type="db.ClientEyeTestLog" Role="ClientEyeTestLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProgramEyeTest">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ClientEyeTestLog">
+              <PropertyRef Name="ProgramEyeTestID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Anamnese">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Data" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ClientUserID" Nullable="false" />
+          <Property Type="DateTime" Name="Created" Nullable="false" Precision="3" />
+          <NavigationProperty Name="User" Relationship="db.FK_Anamnese_User" FromRole="Anamnese" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Equipment">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <Property Type="String" Name="Picture" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EquipmentItems" Relationship="db.FK_EquipmentItem_Equipment" FromRole="Equipment" ToRole="EquipmentItem" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EquipmentInfoes" Relationship="db.FK_EquipmentInfo_Equipment" FromRole="Equipment" ToRole="EquipmentInfo" />
+        </EntityType>
+        <EntityType Name="EquipmentItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="EquipmentID" Nullable="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <NavigationProperty Name="Equipment" Relationship="db.FK_EquipmentItem_Equipment" FromRole="EquipmentItem" ToRole="Equipment" />
+          <NavigationProperty Name="EquipmentItemInfoes" Relationship="db.FK_EquipmentItemInfo_EquipmentItem" FromRole="EquipmentItem" ToRole="EquipmentItemInfo" />
+        </EntityType>
+        <EntityType Name="EquipmentItemInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="EquipmentItemID" Nullable="false" />
+          <Property Type="Int32" Name="LanguageID" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="Price" Nullable="false" />
+          <NavigationProperty Name="EquipmentItem" Relationship="db.FK_EquipmentItemInfo_EquipmentItem" FromRole="EquipmentItemInfo" ToRole="EquipmentItem" />
+          <NavigationProperty Name="Language" Relationship="db.FK_EquipmentItemInfo_Language" FromRole="EquipmentItemInfo" ToRole="Language" />
+        </EntityType>
+        <Association Name="FK_EquipmentItem_Equipment">
+          <End Type="db.Equipment" Role="Equipment" Multiplicity="1" />
+          <End Type="db.EquipmentItem" Role="EquipmentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipment">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentItem">
+              <PropertyRef Name="EquipmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EquipmentItemInfo_EquipmentItem">
+          <End Type="db.EquipmentItem" Role="EquipmentItem" Multiplicity="1" />
+          <End Type="db.EquipmentItemInfo" Role="EquipmentItemInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EquipmentItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentItemInfo">
+              <PropertyRef Name="EquipmentItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EquipmentItemInfo_Language">
+          <End Type="db.Language" Role="Language" Multiplicity="1" />
+          <End Type="db.EquipmentItemInfo" Role="EquipmentItemInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentItemInfo">
+              <PropertyRef Name="LanguageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="EquipmentInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="EquipmentID" Nullable="false" />
+          <Property Type="Int32" Name="LanguageID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Equipment" Relationship="db.FK_EquipmentInfo_Equipment" FromRole="EquipmentInfo" ToRole="Equipment" />
+          <NavigationProperty Name="Language" Relationship="db.FK_EquipmentInfo_Language" FromRole="EquipmentInfo" ToRole="Language" />
+        </EntityType>
+        <Association Name="FK_EquipmentInfo_Equipment">
+          <End Type="db.Equipment" Role="Equipment" Multiplicity="1" />
+          <End Type="db.EquipmentInfo" Role="EquipmentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipment">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentInfo">
+              <PropertyRef Name="EquipmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EquipmentInfo_Language">
+          <End Type="db.Language" Role="Language" Multiplicity="1" />
+          <End Type="db.EquipmentInfo" Role="EquipmentInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="EquipmentInfo">
+              <PropertyRef Name="LanguageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FullName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MiddleName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="JobTitle" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PostalCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CountryID" Nullable="false" />
+          <Property Type="String" Name="Email" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MobilePhone" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Enabled" Nullable="false" />
+          <Property Type="String" Name="Password" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="UserTypeID" />
+          <Property Type="Boolean" Name="MustChangePassword" />
+          <Property Type="Int32" Name="OldDatabaseID" />
+          <Property Type="DateTime" Name="Birthday" Precision="3" />
+          <Property Type="Int32" Name="LanguageID" />
+          <Property Type="DateTime" Name="CreatedOn" Nullable="false" Precision="3" />
+          <Property Type="String" Name="PudData" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Lat" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Long" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="OldPassword" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="ShowOnMap" />
+			 <Property Name="TermsAccepted" Type="Boolean" Nullable="true" />
+          <NavigationProperty Name="ActivationCodes" Relationship="db.FK_ActivationCode_User" FromRole="User" ToRole="ActivationCode" />
+          <NavigationProperty Name="Anamnese" Relationship="db.FK_Anamnese_User" FromRole="User" ToRole="Anamnese" />
+          <NavigationProperty Name="Country" Relationship="db.FK_User_Country" FromRole="User" ToRole="Country" />
+          <NavigationProperty Name="Language" Relationship="db.FK_User_Language" FromRole="User" ToRole="Language" />
+          <NavigationProperty Name="Measuring21" Relationship="db.FK_Measuring21_User" FromRole="User" ToRole="Measuring21" />
+          <NavigationProperty Name="MeasuringControls" Relationship="db.FK_MeasuringControl_User" FromRole="User" ToRole="MeasuringControl" />
+          <NavigationProperty Name="OpticianClients" Relationship="db.FK_OpticianClient_User" FromRole="User" ToRole="OpticianClient" />
+          <NavigationProperty Name="Programs" Relationship="db.FK_Program_User" FromRole="User" ToRole="Program" />
+          <NavigationProperty Name="UserType" Relationship="db.FK_User_UserType" FromRole="User" ToRole="UserType" />
+          
+        </EntityType>
+        <Association Name="FK_ActivationCode_User">
+          <End Type="db.User" Role="User" Multiplicity="0..1" />
+          <End Type="db.ActivationCode" Role="ActivationCode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ActivationCode">
+              <PropertyRef Name="OpticianUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Anamnese_User">
+          <End Type="db.User" Role="User" Multiplicity="1" />
+          <End Type="db.Anamnese" Role="Anamnese" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Anamnese">
+              <PropertyRef Name="ClientUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Country">
+          <End Type="db.Country" Role="Country" Multiplicity="1" />
+          <End Type="db.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="CountryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Language">
+          <End Type="db.Language" Role="Language" Multiplicity="0..1" />
+          <End Type="db.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Language">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="LanguageID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Measuring21_User">
+          <End Type="db.User" Role="User" Multiplicity="1" />
+          <End Type="db.Measuring21" Role="Measuring21" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Measuring21">
+              <PropertyRef Name="ClientUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MeasuringControl_User">
+          <End Type="db.User" Role="User" Multiplicity="1" />
+          <End Type="db.MeasuringControl" Role="MeasuringControl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="MeasuringControl">
+              <PropertyRef Name="ClientUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OpticianClient_User">
+          <End Type="db.User" Role="User" Multiplicity="1" />
+          <End Type="db.OpticianClient" Role="OpticianClient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="OpticianClient">
+              <PropertyRef Name="OpticianUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Program_User">
+          <End Type="db.User" Role="User" Multiplicity="1" />
+          <End Type="db.Program" Role="Program" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Program">
+              <PropertyRef Name="ClientUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_UserType">
+          <End Type="db.UserType" Role="UserType" Multiplicity="0..1" />
+          <End Type="db.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="UserTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="EyeTestLink">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="EyeTestID" Nullable="false" />
+          <Property Type="Int32" Name="OpticianID" Nullable="false" />
+          <Property Type="String" Name="LinkUrl" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LinkName" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbStoreContainer" CdmEntityContainer="DatabaseEntities">
+          <EntitySetMapping Name="DictionaryEntries"><EntityTypeMapping TypeName="db.DictionaryEntry"><MappingFragment StoreEntitySet="DictionaryEntry">
+            <ScalarProperty Name="ClientSide" ColumnName="ClientSide" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Key" ColumnName="Key" />
+            <ScalarProperty Name="Values" ColumnName="Values" />
+            <ScalarProperty Name="SystemEntry" ColumnName="SystemEntry" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Languages"><EntityTypeMapping TypeName="db.Language"><MappingFragment StoreEntitySet="Language">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Countries">
+            <EntityTypeMapping TypeName="db.Country">
+              <MappingFragment StoreEntitySet="Country">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OpticianClients">
+            <EntityTypeMapping TypeName="db.OpticianClient">
+              <MappingFragment StoreEntitySet="OpticianClient">
+                <ScalarProperty Name="ClientUserID" ColumnName="ClientUserID" />
+                <ScalarProperty Name="OpticianUserID" ColumnName="OpticianUserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserTypes">
+            <EntityTypeMapping TypeName="db.UserType">
+              <MappingFragment StoreEntitySet="UserType">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ActivationCodes">
+            <EntityTypeMapping TypeName="db.ActivationCode">
+              <MappingFragment StoreEntitySet="ActivationCode">
+                <ScalarProperty Name="AvailableToDistributorUserID" ColumnName="AvailableToDistributorUserID" />
+                <ScalarProperty Name="Printed" ColumnName="Printed" />
+                <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+                <ScalarProperty Name="ActivationDate" ColumnName="ActivationDate" />
+                <ScalarProperty Name="ClientUserID" ColumnName="ClientUserID" />
+                <ScalarProperty Name="OpticianUserID" ColumnName="OpticianUserID" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EyeTests">
+            <EntityTypeMapping TypeName="db.EyeTest">
+              <MappingFragment StoreEntitySet="EyeTest">
+                <ScalarProperty Name="OpticianID" ColumnName="OpticianID" />
+                <ScalarProperty Name="HighscoreApplicable" ColumnName="HighscoreApplicable" />
+                <ScalarProperty Name="InternalName" ColumnName="InternalName" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="ScoreRequired" ColumnName="ScoreRequired" />
+                <ScalarProperty Name="ScreenTest" ColumnName="ScreenTest" />
+                <ScalarProperty Name="OldBbName" ColumnName="OldBbName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EyeTestInfos">
+            <EntityTypeMapping TypeName="db.EyeTestInfo">
+              <MappingFragment StoreEntitySet="EyeTestInfo">
+                <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+                <ScalarProperty Name="InfoText" ColumnName="InfoText" />
+                <ScalarProperty Name="InfoType" ColumnName="InfoType" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="EyeTestID" ColumnName="EyeTestID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Programs">
+            <EntityTypeMapping TypeName="db.Program">
+              <MappingFragment StoreEntitySet="Program">
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="ClientUserID" ColumnName="ClientUserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProgramEyeTests">
+            <EntityTypeMapping TypeName="db.ProgramEyeTest">
+              <MappingFragment StoreEntitySet="ProgramEyeTest">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="LockedByOptician" ColumnName="LockedByOptician" />
+                <ScalarProperty Name="Locked" ColumnName="Locked" />
+                <ScalarProperty Name="EyeTestID" ColumnName="EyeTestID" />
+                <ScalarProperty Name="ProgramID" ColumnName="ProgramID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MeasuringControls">
+            <EntityTypeMapping TypeName="db.MeasuringControl">
+              <MappingFragment StoreEntitySet="MeasuringControl">
+                <ScalarProperty Name="IsStart" ColumnName="IsStart" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="ClientUserID" ColumnName="ClientUserID" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Measuring21">
+            <EntityTypeMapping TypeName="db.Measuring21">
+              <MappingFragment StoreEntitySet="Measuring21">
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="ClientUserID" ColumnName="ClientUserID" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ClientEyeTestLogs">
+            <EntityTypeMapping TypeName="db.ClientEyeTestLog">
+              <MappingFragment StoreEntitySet="ClientEyeTestLog">
+                <ScalarProperty Name="UpdateToken" ColumnName="UpdateToken" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="AttribValue" ColumnName="AttribValue" />
+                <ScalarProperty Name="AttribName" ColumnName="AttribName" />
+                <ScalarProperty Name="HighScore" ColumnName="HighScore" />
+                <ScalarProperty Name="Score" ColumnName="Score" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="ProgramEyeTestID" ColumnName="ProgramEyeTestID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Anamnese">
+            <EntityTypeMapping TypeName="db.Anamnese">
+              <MappingFragment StoreEntitySet="Anamnese">
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="ClientUserID" ColumnName="ClientUserID" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Equipments">
+            <EntityTypeMapping TypeName="db.Equipment">
+              <MappingFragment StoreEntitySet="Equipment">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EquipmentItems">
+            <EntityTypeMapping TypeName="db.EquipmentItem">
+              <MappingFragment StoreEntitySet="EquipmentItem">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EquipmentItemInfoes">
+            <EntityTypeMapping TypeName="db.EquipmentItemInfo">
+              <MappingFragment StoreEntitySet="EquipmentItemInfo">
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+                <ScalarProperty Name="EquipmentItemID" ColumnName="EquipmentItemID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EquipmentInfoes">
+            <EntityTypeMapping TypeName="db.EquipmentInfo">
+              <MappingFragment StoreEntitySet="EquipmentInfo">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+                <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="db.User">
+              <MappingFragment StoreEntitySet="User">
+					  <ScalarProperty Name="TermsAccepted" ColumnName="TermsAccepted" />
+                <ScalarProperty Name="ShowOnMap" ColumnName="ShowOnMap" />
+                <ScalarProperty Name="OldPassword" ColumnName="OldPassword" />
+                <ScalarProperty Name="Long" ColumnName="Long" />
+                <ScalarProperty Name="Lat" ColumnName="Lat" />
+                <ScalarProperty Name="PudData" ColumnName="PudData" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+                <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+                <ScalarProperty Name="OldDatabaseID" ColumnName="OldDatabaseID" />
+                <ScalarProperty Name="MustChangePassword" ColumnName="MustChangePassword" />
+                <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EyeTestLinks">
+            <EntityTypeMapping TypeName="db.EyeTestLink">
+              <MappingFragment StoreEntitySet="EyeTestLink">
+                <ScalarProperty Name="LinkName" ColumnName="LinkName" />
+                <ScalarProperty Name="LinkUrl" ColumnName="LinkUrl" />
+                <ScalarProperty Name="OpticianID" ColumnName="OpticianID" />
+                <ScalarProperty Name="EyeTestID" ColumnName="EyeTestID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="dbModel" ZoomLevel="59">
+        <EntityTypeShape EntityType="db.DictionaryEntry" Width="1.5" PointX="0.75" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="db.Language" Width="1.5" PointX="2.75" PointY="0.75" Height="1.4033821614583335" IsExpanded="true" />
+        <EntityTypeShape EntityType="db.Country" Width="1.5" PointX="0.75" PointY="5.125" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="db.OpticianClient" Width="1.5" PointX="5.75" PointY="0.75" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="db.UserType" Width="1.5" PointX="0.75" PointY="8.125" Height="1.5956835937499996" />
+        <EntityTypeShape EntityType="db.ActivationCode" Width="1.5" PointX="5.25" PointY="6.25" Height="2.5571907552083308" />
+        <EntityTypeShape EntityType="db.EyeTest" Width="1.5" PointX="7.625" PointY="7" Height="2.3648893229166745" />
+        <EntityTypeShape EntityType="db.EyeTestInfo" Width="1.5" PointX="7.625" PointY="3.75" Height="2.5571907552083317" />
+        <AssociationConnector Association="db.FK_EyeTestInfo_EyeTest" >
+          <ConnectorPoint PointX="8.375" PointY="7" />
+          <ConnectorPoint PointX="8.375" PointY="6.3071907552083317" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_EyeTestInfo_Language" >
+          <ConnectorPoint PointX="2.78125" PointY="2.922587890625" />
+          <ConnectorPoint PointX="2.78125" PointY="3.84375" />
+          <ConnectorPoint PointX="3.4791666666666665" PointY="3.8437499999999996" />
+          <ConnectorPoint PointX="3.6458333333333335" PointY="3.84375" />
+          <ConnectorPoint PointX="7.135416666666667" PointY="3.8437499999999996" />
+          <ConnectorPoint PointX="7.302083333333333" PointY="3.84375" />
+          <ConnectorPoint PointX="7.625" PointY="3.84375" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="db.Program" Width="1.5" PointX="5.625" PointY="10.625" Height="1.9802864583333353" />
+        <EntityTypeShape EntityType="db.ProgramEyeTest" Width="1.5" PointX="9.875" PointY="8.75" Height="2.172587890624996" />
+        <AssociationConnector Association="db.FK_ProgramEyeTest_EyeTest" >
+          <ConnectorPoint PointX="9.125" PointY="9.4441129557291674" />
+          <ConnectorPoint PointX="9.2604166666666661" PointY="9.4441129557291674" />
+          <ConnectorPoint PointX="9.4270833333333339" PointY="9.4441129557291674" />
+          <ConnectorPoint PointX="9.875" PointY="9.4441129557291674" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_ProgramEyeTest_Program" >
+          <ConnectorPoint PointX="7.125" PointY="10.966095377604166" />
+          <ConnectorPoint PointX="9.2604166666666661" PointY="10.966095377604166" />
+          <ConnectorPoint PointX="9.4270833333333339" PointY="10.966095377604166" />
+          <ConnectorPoint PointX="9.875" PointY="10.966095377604166" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="db.MeasuringControl" Width="1.5" PointX="1.625" PointY="13.25" Height="1.9802864583333339" />
+        <EntityTypeShape EntityType="db.Measuring21" Width="1.5" PointX="5.625" PointY="13" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="db.ClientEyeTestLog" Width="1.5" PointX="12.125" PointY="8.5" Height="2.9417936197916674" />
+        <AssociationConnector Association="db.FK_ClientEyeTestLog_ProgramEyeTest" >
+          <ConnectorPoint PointX="11.375" PointY="13.028595377604168" />
+          <ConnectorPoint PointX="11.666666666666666" PointY="13.028595377604168" />
+          <ConnectorPoint PointX="11.833333333333334" PointY="13.028595377604168" />
+          <ConnectorPoint PointX="12.125" PointY="13.028595377604168" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="db.Anamnese" Width="1.5" PointX="1.625" PointY="11" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="db.Equipment" Width="1.5" PointX="2.75" PointY="19.5" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="db.EquipmentItem" Width="1.5" PointX="5.75" PointY="19" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="db.EquipmentItemInfo" Width="1.5" PointX="11.25" PointY="1.125" Height="2.3648893229166674" />
+        <AssociationConnector Association="db.FK_EquipmentItem_Equipment" >
+          <ConnectorPoint PointX="4.25" PointY="20.240143229166669" />
+          <ConnectorPoint PointX="5.75" PointY="20.240143229166669" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_EquipmentItemInfo_EquipmentItem" >
+          <ConnectorPoint PointX="7.25" PointY="19.990143229166669" />
+          <ConnectorPoint PointX="8.6666666666666661" PointY="19.990143229166669" />
+          <ConnectorPoint PointX="8.8333333333333339" PointY="19.990143229166669" />
+          <ConnectorPoint PointX="11.75" PointY="19.990143229166669" />
+          <ConnectorPoint PointX="11.75" PointY="3.4898893229166674" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_EquipmentItemInfo_Language" >
+          <ConnectorPoint PointX="4.25" PointY="2.7615364583333335" />
+          <ConnectorPoint PointX="7.135416666666667" PointY="2.7615364583333331" />
+          <ConnectorPoint PointX="7.302083333333333" PointY="2.7615364583333335" />
+          <ConnectorPoint PointX="11.25" PointY="2.7615364583333335" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="db.EquipmentInfo" Width="1.5" PointX="8" PointY="12" Height="2.3648893229166674" />
+        <AssociationConnector Association="db.FK_EquipmentInfo_Equipment" >
+          <ConnectorPoint PointX="4.25" PointY="21.357687174479167" />
+          <ConnectorPoint PointX="8.75" PointY="21.357687174479167" />
+          <ConnectorPoint PointX="8.75" PointY="14.364889322916667" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_EquipmentInfo_Language" >
+          <ConnectorPoint PointX="4.25" PointY="2.8733146744791664" />
+          <ConnectorPoint PointX="7.135416666666667" PointY="2.873314674479166" />
+          <ConnectorPoint PointX="7.302083333333333" PointY="2.8733146744791664" />
+          <ConnectorPoint PointX="9.34375" PointY="2.8733146744791664" />
+          <ConnectorPoint PointX="9.34375" PointY="12" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="db.User" Width="1.5" PointX="2.875" PointY="4" Height="8.1339322916666674" />
+        <AssociationConnector Association="db.FK_ActivationCode_User" >
+          <ConnectorPoint PointX="4.375" PointY="7.5285953776041659" />
+          <ConnectorPoint PointX="5.25" PointY="7.5285953776041659" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_Anamnese_User" >
+          <ConnectorPoint PointX="3.7500005" PointY="12.133932291666667" />
+          <ConnectorPoint PointX="3.7500005" PointY="12.557109874999998" />
+          <ConnectorPoint PointX="3.5208335833333337" PointY="12.557109874999998" />
+          <ConnectorPoint PointX="3.3541669166666668" PointY="12.557109874999998" />
+          <ConnectorPoint PointX="3.125" PointY="12.557109874999998" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_User_Country" >
+          <ConnectorPoint PointX="2.25" PointY="5.922841796875" />
+          <ConnectorPoint PointX="2.875" PointY="5.922841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_User_Language" >
+          <ConnectorPoint PointX="3.5625" PointY="2.922587890625" />
+          <ConnectorPoint PointX="3.5625" PointY="4" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_Measuring21_User" >
+          <ConnectorPoint PointX="4.09375275" PointY="12.133932291666667" />
+          <ConnectorPoint PointX="4.09375275" PointY="13.09375" />
+          <ConnectorPoint PointX="5.625" PointY="13.09375" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_MeasuringControl_User" >
+          <ConnectorPoint PointX="3.4375002500000003" PointY="12.133932291666667" />
+          <ConnectorPoint PointX="3.4375002500000003" PointY="14.240143229166666" />
+          <ConnectorPoint PointX="3.125" PointY="14.240143229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_OpticianClient_User" >
+          <ConnectorPoint PointX="4.375" PointY="5.09375" />
+          <ConnectorPoint PointX="7.21875" PointY="5.09375" />
+          <ConnectorPoint PointX="7.21875" PointY="2.537985026041667" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_Program_User" >
+          <ConnectorPoint PointX="4.375" PointY="11.379466145833334" />
+          <ConnectorPoint PointX="5.625" PointY="11.379466145833334" />
+        </AssociationConnector>
+        <AssociationConnector Association="db.FK_User_UserType" >
+          <ConnectorPoint PointX="2.25" PointY="8.922841796875" />
+          <ConnectorPoint PointX="2.875" PointY="8.922841796875" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="db.EyeTestLink" Width="1.5" PointX="0.1338148099062102" PointY="8.4718245754352886" />
+        </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

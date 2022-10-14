@@ -1,0 +1,1157 @@
+2014-08-13 09:00:55,773 WARN - 
+something is logging in the bushes
+
+
+2014-08-13 09:00:57,439 WARN - 
+something is logging in the bushes
+
+
+2016-11-01 09:41:52,864 INFO - 
+Deleting Program for client 36276
+
+
+2016-11-01 09:41:54,573 INFO - 
+Program test count on final save: 35. Client ID: 36276
+
+
+2016-11-02 11:03:26,995 INFO - 
+Deleting Program for client 36278
+
+
+2016-11-02 11:05:30,536 INFO - 
+Program test count on final save: 47. Client ID: 36278
+
+
+2016-11-02 11:09:53,334 INFO - 
+Deleting Program for client 36278
+
+
+2016-11-02 11:10:41,051 INFO - 
+Program test count on final save: 29. Client ID: 36278
+
+
+2016-11-02 11:20:30,585 INFO - 
+Deleting Program for client 36279
+
+
+2016-11-02 11:20:35,835 INFO - 
+Program test count on final save: 35. Client ID: 36279
+
+
+2016-11-02 11:22:56,466 INFO - 
+Deleting Program for client 36279
+
+
+2016-11-02 11:23:54,905 INFO - 
+Program test count on final save: 35. Client ID: 36279
+
+
+2016-11-02 11:27:33,834 INFO - 
+Deleting Program for client 36279
+
+
+2016-11-02 11:28:21,788 INFO - 
+Program test count on final save: 35. Client ID: 36279
+
+
+2016-11-02 11:28:52,696 INFO - 
+Deleting Program for client 36279
+
+
+2016-11-02 11:29:42,698 INFO - 
+Program test count on final save: 35. Client ID: 36279
+
+
+2016-11-02 11:30:40,871 INFO - 
+Deleting Program for client 36279
+
+
+2016-11-02 11:31:02,141 INFO - 
+Program test count on final save: 35. Client ID: 36279
+
+
+2016-11-02 11:38:32,236 INFO - 
+Deleting Program for client 36279
+
+
+2016-11-02 11:38:37,115 INFO - 
+Program test count on final save: 35. Client ID: 36279
+
+
+2016-11-02 11:46:47,374 INFO - 
+Deleting Program for client 36279
+
+
+2016-11-02 11:46:52,288 INFO - 
+Program test count on final save: 35. Client ID: 36279
+
+
+2016-11-04 16:09:30,992 INFO - 
+Deleting Program for client 36281
+
+
+2016-11-04 16:09:32,809 INFO - 
+Program test count on final save: 35. Client ID: 36281
+
+
+2016-11-04 16:13:18,963 INFO - 
+Deleting Program for client 36282
+
+
+2016-11-04 16:13:20,833 INFO - 
+Program test count on final save: 35. Client ID: 36282
+
+
+2016-11-10 08:14:33,256 INFO - 
+Deleting Program for client 36283
+
+
+2016-11-10 08:14:35,064 INFO - 
+Program test count on final save: 35. Client ID: 36283
+
+
+2017-06-20 13:30:49,567 INFO - 
+Deleting Program for client 36287
+
+
+2017-06-20 13:30:50,975 INFO - 
+Program test count on final save: 29. Client ID: 36287
+
+
+2018-06-18 14:59:48,101 INFO - 
+Deleting Program for client 36889
+
+
+2018-06-18 14:59:57,077 INFO - 
+Program test count on final save: 32. Client ID: 36889
+
+
+2018-12-20 13:39:54,482 INFO - 
+[Thread 6] Determining hash of code files on disk
+
+
+2018-12-20 13:39:54,505 INFO - 
+[Thread 6] [PluginManager] Determining hash of code files on disk (took 4ms)
+
+
+2018-12-20 13:39:54,505 INFO - 
+[Thread 6] Hash determined (took 4ms)
+
+
+2018-12-20 13:39:54,508 INFO - 
+[Thread 6] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+
+
+2018-12-20 13:39:54,757 INFO - 
+[Thread 6] [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 256ms)
+
+
+2018-12-20 13:39:54,757 INFO - 
+[Thread 6] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 16 (took 255ms)
+
+
+2018-12-20 13:39:54,988 ERROR - 
+[Thread 6] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2018-12-20 13:39:55,004 ERROR - 
+[Thread 6] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2018-12-20 13:39:55,004 ERROR - 
+[Thread 6] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2018-12-20 13:39:55,004 INFO - 
+[Thread 6] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+
+
+2018-12-20 13:39:55,004 INFO - 
+[Thread 6] [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+
+
+2018-12-20 13:39:55,004 INFO - 
+[Thread 6] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 4ms)
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,021 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] [CoreBootManager] Umbraco application starting (took 594ms)
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2018-12-20 13:39:55,037 INFO - 
+[Thread 6] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,496 INFO - 
+[Thread 19] Determining hash of code files on disk
+
+
+2019-01-02 10:16:41,510 INFO - 
+[Thread 19] [PluginManager] Determining hash of code files on disk (took 3ms)
+
+
+2019-01-02 10:16:41,510 INFO - 
+[Thread 19] Hash determined (took 3ms)
+
+
+2019-01-02 10:16:41,514 INFO - 
+[Thread 19] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+
+
+2019-01-02 10:16:41,594 INFO - 
+[Thread 19] [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 80ms)
+
+
+2019-01-02 10:16:41,594 INFO - 
+[Thread 19] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 16 (took 80ms)
+
+
+2019-01-02 10:16:41,603 ERROR - 
+[Thread 19] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2019-01-02 10:16:41,604 ERROR - 
+[Thread 19] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2019-01-02 10:16:41,604 ERROR - 
+[Thread 19] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'E:\Development\clients\tye\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2019-01-02 10:16:41,605 INFO - 
+[Thread 19] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+
+
+2019-01-02 10:16:41,610 INFO - 
+[Thread 19] [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 4ms)
+
+
+2019-01-02 10:16:41,610 INFO - 
+[Thread 19] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 4ms)
+
+
+2019-01-02 10:16:41,628 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,628 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,628 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,629 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,630 INFO - 
+[Thread 19] [CoreBootManager] Umbraco application starting (took 144ms)
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,631 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,632 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2019-01-02 10:16:41,632 INFO - 
+[Thread 19] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,166 INFO - 
+[Thread 8] Determining hash of code files on disk
+
+
+2022-10-04 10:22:53,177 INFO - 
+[Thread 8] [PluginManager] Determining hash of code files on disk (took 4ms)
+
+
+2022-10-04 10:22:53,177 INFO - 
+[Thread 8] Hash determined (took 3ms)
+
+
+2022-10-04 10:22:53,181 INFO - 
+[Thread 8] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+
+
+2022-10-04 10:22:53,245 INFO - 
+[Thread 8] [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 63ms)
+
+
+2022-10-04 10:22:53,246 INFO - 
+[Thread 8] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 16 (took 62ms)
+
+
+2022-10-04 10:22:53,256 ERROR - 
+[Thread 8] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2022-10-04 10:22:53,257 ERROR - 
+[Thread 8] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2022-10-04 10:22:53,257 ERROR - 
+[Thread 8] Error reading umbracoSettings file: System.IO.FileNotFoundException: Could not find file 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+System.IO.FileNotFoundException: Could not find file 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'.
+File name: 'C:\Users\ricar\Desktop\tye-gammel-kode\tye_dk_2.0\config\umbracoSettings.config'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at Umbraco.Core.Configuration.UmbracoSettings.EnsureSettingsDocument()
+
+
+2022-10-04 10:22:53,258 INFO - 
+[Thread 8] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+
+
+2022-10-04 10:22:53,261 INFO - 
+[Thread 8] [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 2ms)
+
+
+2022-10-04 10:22:53,261 INFO - 
+[Thread 8] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,290 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,291 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,292 INFO - 
+[Thread 8] [CoreBootManager] Umbraco application starting (took 148ms)
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,293 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,294 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+
+2022-10-04 10:22:53,295 INFO - 
+[Thread 8] CurrentVersion different from configStatus: '6.1.1','6.1.6'
+
+

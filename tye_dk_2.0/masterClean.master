@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterClean.master.cs" Inherits="masterClean" %>
+
+<!DOCTYPE html>
+	<html dir="ltr" lang="da-DK">
+		<head id="Head1" runat="server">
+			<meta charset="utf-8">
+			<title>TrainYourEyes</title>
+			<link rel="Stylesheet" href="/css/buttons.css" />
+			<script type="text/javascript" src="/js/jquery1.8.3.min.js"></script>
+			<script type="text/javascript" src="/js/jquery.center.js"></script>
+			<script type="text/javascript" src="/js/tye.js"></script>
+			<script type="text/javascript" src="/js/includer.js"></script>
+			<asp:ContentPlaceHolder id="CPHhead" runat="server">
+			</asp:ContentPlaceHolder>
+			<link rel="Stylesheet" href="/css/master.css" />
+		</head>
+	<body>
+		<form id="masterForm" runat="server">
+		<asp:ScriptManager runat="server" ID="ScriptManager1" />
+		<asp:ContentPlaceHolder id="CPHcontent" runat="server" />
+
+		<asp:Literal runat="server" ID="litJsStartTag" Text="<script type='text/javascript'>" EnableViewState="false" />
+			
+			 <asp:ContentPlaceHolder id="CPHscript" runat="server">
+			 </asp:ContentPlaceHolder>
+			 
+			 $(function () {
+				include('/js/jquery-ui1.9.1.min.js');
+				include('/js/jquery.qtip.min.js');
+				includer();	
+	 		});
+			
+		 <asp:Literal runat="server" ID="Literal1" Text="</script>" EnableViewState="false" />
+    
+	 </form>
+	</body>
+</html>

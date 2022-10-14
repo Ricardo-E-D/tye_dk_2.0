@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4212EA0C-C833-4ABF-9299-E2CBE94ECA61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tye</RootNamespace>
+    <AssemblyName>API</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="monosolutions.Utils, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\monosolutions\monoUtils3.0\bin\Debug\monosolutions.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API.cs" />
+    <Compile Include="classes\ActivationCode.cs" />
+    <Compile Include="classes\ClientEyeTestLog.cs" />
+    <Compile Include="classes\Anamnese.cs" />
+    <Compile Include="classes\EyeTestLink.cs" />
+    <Compile Include="classes\Equipment.cs" />
+    <Compile Include="classes\EquipmentInfo.cs" />
+    <Compile Include="classes\EquipmentItem.cs" />
+    <Compile Include="classes\EquipmentItemInfo.cs" />
+    <Compile Include="classes\Measuring21.cs" />
+    <Compile Include="classes\MeasuringControl.cs" />
+    <Compile Include="classes\ProgramEyeTest.cs" />
+    <Compile Include="classes\Program.cs" />
+    <Compile Include="classes\EyeTestInfo.cs" />
+    <Compile Include="classes\EyeTest.cs" />
+    <Compile Include="classes\Country.cs" />
+    <Compile Include="classes\Dictionary.cs" />
+    <Compile Include="classes\DictionaryEntry.cs" />
+    <Compile Include="classes\Language.cs" />
+    <Compile Include="classes\Pud.cs" />
+    <Compile Include="classes\User.cs" />
+    <Compile Include="classes\ValueSet.cs" />
+    <Compile Include="db\ActivationCode.cs" />
+    <Compile Include="db\ClientEyeTestLog.cs" />
+    <Compile Include="db\Anamnese.cs" />
+    <Compile Include="db\EyeTestLink.cs" />
+    <Compile Include="db\Equipment.cs" />
+    <Compile Include="db\EquipmentInfo.cs" />
+    <Compile Include="db\EquipmentItem.cs" />
+    <Compile Include="db\EquipmentItemInfo.cs" />
+    <Compile Include="db\Measuring21.cs" />
+    <Compile Include="db\MeasuringControl.cs" />
+    <Compile Include="db\ProgramEyeTest.cs" />
+    <Compile Include="db\Program.cs" />
+    <Compile Include="db\EyeTestInfo.cs" />
+    <Compile Include="db\EyeTest.cs" />
+    <Compile Include="db\OpticianClient.cs" />
+    <Compile Include="db\Country.cs" />
+    <Compile Include="db\dbModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="db\Dictionary.cs" />
+    <Compile Include="db\Language.cs" />
+    <Compile Include="db\User.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="db\dbModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

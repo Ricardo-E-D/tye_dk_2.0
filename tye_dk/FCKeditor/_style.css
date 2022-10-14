@@ -1,0 +1,30 @@
+BODY { background-color: #ffffff; text-align: left; margin-top: 0px; padding: 0px; color:#000000; font-family: tahoma, arial, verdana; font-size: 11px; }
+IMG { border: 0px; }
+TD, DIV { font-family: tahoma, arial, verdana; font-size: 11px; color: #000000; text-align:left; }
+
+IMG.overlay, .pngBG {  behavior: url('iepngfix.htc'); border: 0px; }
+.subMenuDiv TD { color: #FFFFFF; }
+
+H1 { font-size: 14px; }
+H2 { font-size: 14px; }
+
+.stdinput, SELECT, INPUT, textarea { font-family: tahoma, arial, verdana; font-size: 11px; color: #000000; }
+INPUT, textarea { font-size: 10px; border: #b1b4b6 1px solid; }
+.stdbutton { background-color: #4D883C; color:#ffffff; border:#ffffff 1px solid; font-weight: bold; }
+.stdbuttonover { background-color: #70B244; color:#ffffff; border:#ffffff 1px solid; font-weight: bold; }
+A { color: #ffffff; text-decoration: underline; font-size: 11px; }
+A:hover { color:#4D883C; text-decoration: none; }
+A.txt, A.txt:hover { text-decoration: none; color:#000000; }
+
+.menu1, A.menu1:hover { font-family: tahoma, arial, verdana; font-size: 11px; font-weight: normal; color: #ffffff; text-decoration:none; }
+.menu1sel, A.menu1sel:hover { font-family: tahoma, arial, verdana; font-size: 11px; font-weight: normal; color: #ffffff; text-decoration:none; }
+.menu1td { text-align: center; background-color: #9e0933; color:#000000; font-size: 11px; font-weight:bold; padding: 2px 9px 2px 3px; border: #b1b4b6 solid; border-width: 1px 1px 1px 1px; text-align:left; }
+.menu1seltd { text-align: center; background-color: #999999; color:#000000; font-size: 11px; font-weight:bold; padding: 2px 9px 2px 3px; border: #b1b4b6 solid; border-width: 1px 1px 1px 1px; text-align:left; }
+
+.menu2, A.menu2:hover { font-family: tahoma, arial, verdana; font-size: 11px; font-weight: normal; color: #ffffff; text-decoration:none; }
+.menu2sel, A.menu2sel:hover { font-family: tahoma, arial, verdana; font-size: 11px; font-weight: normal; color: #ffffff; text-decoration:none; }
+.menu2td { text-align: center; background-color: #9e0933; color:#000000; font-size: 11px; font-weight:bold; padding: 2px 9px 2px 10px; border: #b1b4b6 solid; border-width: 1px 1px 1px 1px; text-align:left; }
+.menu2seltd { text-align: center; background-color: #999999; color:#000000; font-size: 11px; font-weight:bold; padding: 2px 9px 2px 10px; border: #b1b4b6 solid; border-width: 1px 1px 1px 1px; text-align:left; }
+
+.r { background-color:#ff0000;}
+.white { text-decoration: none; font-weight: bold; }

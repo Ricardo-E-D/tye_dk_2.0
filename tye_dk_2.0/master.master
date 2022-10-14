@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterGrand.master" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="CPHmasterHead" Runat="Server">
+<asp:ContentPlaceHolder ID="CPHhead" runat="server" />
+	<link rel="Stylesheet" href="/css/admin.css" />
+	<link rel="Stylesheet" href="/css/jquery.qtip.css" />
+	<script type="text/javascript" src="/js/js.js"></script>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="CPHmasterMenu" Runat="Server">
+	<div class="username">
+		<asp:Literal runat="server" ID="litUserInfo" /><br />
+		<asp:LinkButton runat="server" ID="lnkStopImpersonating" Visible="false" CausesValidation="false" 
+		 OnClick="eLnkStopImpersonating_Click" CssClass="btn neutralsmall">Stop impersonating</asp:LinkButton>
+	</div>
+	<div class="logout">
+		<asp:LinkButton runat="server" ID="lnkLogout" OnClick="eLnkLogout_Click" CausesValidation="false">
+			<img src="/img/logout.png" alt="logout" />
+		</asp:LinkButton>
+	</div>
+	<asp:PlaceHolder runat="server" ID="plhMenuAdmin">
+		<ul class="menu lv1"> 
+			<li class="menu lv2">
+				<a class="menu lv2" href="/opticians.aspx">
+					<Eav:TransLit runat="server" ID="TransLit1" Key="opticians" />
+				</a>
+			</li>
+			<li class="menu lv2" style="display:none;">
+				<a class="menu lv2" href="/admin/dictionary.aspx">Dictionary</a>
+			</li>
+			<li class="menu lv2">
+				<a class="menu lv2" href="/admin/eyeTestInfo.aspx">Øvelsestekster</a>
+			</li>
+			<li class="menu lv2">
+				<a class="menu lv2" href="/admin/equipment.aspx">
+					<Eav:TransLit runat="server" ID="TransLit4" Key="equipment" />
+				</a>
+			</li>
+			<li class="menu lv2">
+				<a class="menu lv2" href="/eyeTest.aspx"><Eav:TransLit runat="server" ID="TransLit121" Key="eyeTest" /></a>
+			</li>
+			<li class="menu lv2">
+				<asp:HyperLink runat="server" ID="lnkMenuToServiceAdmin" CssClass="menu lv2"><Eav:TransLit runat="server" ID="TransLit9" Key="service" /></asp:HyperLink>
+			</li>
+			<li class="menu lv2">
+				<asp:HyperLink runat="server" ID="lnkToPressAdmin">
+					<Eav:TransLit runat="server" ID="TransLit12" Key="press" />
+				</asp:HyperLink>
+			</li>
+			<li class="menu lv2">
+				<a class="menu lv2" href="/loginChangePassword.aspx"><Eav:TransLit runat="server" ID="TransLit15" Key="changePassword" /></a>
+			</li>
+		</ul>
+	</asp:PlaceHolder>
+	<asp:PlaceHolder runat="server" ID="plhMenuDistributor" Visible="false">
+		<ul class="menu lv1"> 
+			<li class="menu lv2">
+				<a class="menu lv2" href="/opticians.aspx">
+					<Eav:TransLit runat="server" ID="TransLit6" Key="opticians" />
+				</a>
+			</li>
+			<li class="menu lv2">
+				<a class="menu lv2" href="/eyeTest.aspx"><Eav:TransLit runat="server" ID="TransLit13" Key="eyeTest" /></a>
+			</li>
+			<li class="menu lv2">
+				<asp:HyperLink runat="server" ID="lnkMenuToServiceDist" CssClass="menu lv2"><Eav:TransLit runat="server" ID="TransLit7" Key="service" /></asp:HyperLink>
+			</li>
+			<li class="menu lv2">
+				<asp:HyperLink runat="server" ID="lnkToPressDistributor">
+					<Eav:TransLit runat="server" ID="TransLit11" Key="press" />
+				</asp:HyperLink>
+			</li>
+		</ul>
+	</asp:PlaceHolder>
+	<asp:PlaceHolder runat="server" ID="plhMenuOptician" Visible="false">
+		<ul class="menu lv1"> 
+			<li class="menu lv2">
+				<a class="menu lv2" href="/clients.aspx">
+					<Eav:TransLit runat="server" ID="TransLit2" Key="clients" />
+				</a>
+			</li>
+			<li class="menu lv2">
+				<a class="menu lv2" href="/eyeTest.aspx"><Eav:TransLit runat="server" ID="TransLit14" Key="eyeTest" /></a>
+			</li>
+			<li class="menu lv2">
+				<a class="menu lv2" href="/equipmentShop.aspx">
+					<Eav:TransLit runat="server" ID="TransLit3" Key="equipment" />
+				</a>
+			</li>
+			<li class="menu lv2">
+				<asp:HyperLink runat="server" ID="lnkMenuToServiceOptician" CssClass="menu lv2"><Eav:TransLit runat="server" ID="TransLit8" Key="service" /></asp:HyperLink>
+			</li>
+			<li class="menu lv2">
+				<asp:HyperLink runat="server" ID="lnkToPressOptician">
+					<Eav:TransLit runat="server" ID="TransLit10" Key="press" />
+				</asp:HyperLink>
+			</li>
+		</ul>
+	</asp:PlaceHolder>
+	<asp:PlaceHolder runat="server" ID="plhMenuClient" Visible="false">
+		<ul class="menu lv1"> 
+			<li class="menu lv2">
+				<a class="menu lv2" href="/program.aspx"><Eav:TransLit runat="server" ID="tmcProgram" Key="eyeTestProgram" /></a>
+			</li>
+			<li class="menu lv2">
+				<a class="menu lv2" href="/clientLog.aspx"><Eav:TransLit runat="server" ID="TransLit5" Key="clientLog" /></a>
+			</li>
+		</ul>
+	</asp:PlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="CPHmasterContent" Runat="Server">
+	
+	<div id="debug"></div>
+
+	<asp:ContentPlaceHolder ID="CPHcontent" runat="server" />
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="CPHmasterScript" Runat="Server">
+	<asp:ContentPlaceHolder ID="CPHscript" runat="server" />
+	
+	include('/dynJs.aspx?q=dic', function() { 
+		tye.dictionaryLanguage = 'l<%= CurrentLanguage.ID %>'; 
+	});
+</asp:Content>
